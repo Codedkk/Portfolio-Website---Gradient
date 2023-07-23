@@ -1,0 +1,29 @@
+// ----- font family -----
+$ff-title: "Gambarino", serif;
+$ff-text: "Cabinet Grotesk", sans-serif;
+
+// ----- color -----
+$clr-text: #131313;
+$color-accent-1: #F7C8C7;
+$color-accent-2: #639BB2;
+
+// ----- container -----
+.container {
+    margin-inline: 2rem;
+}
+
+// ----- margin -----
+
+// ----- padding -----
+$padding-1: 1.25rem;
+
+// ----- breakpoints -----
+$XXS: 390px;
+$XS: 576px;
+$S: 768px;
+$M: 992px;
+$L: 1200px;
+$XL: 1440px;
+
+// ----- breakpoints -----
+$height-button-1: 3.375rem;

@@ -1,0 +1,41 @@
+.navbar {
+    font-family: $ff-title;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $clr-text;
+
+    @extend .container;
+
+    .nav_right {
+        padding-top: $padding-1;
+
+        .nav_right-xxs {
+            padding-bottom: $padding-1;
+
+            .ham-menu {
+                position: absolute;
+                top: 4rem;
+                left: 0;
+                width: 100%;
+                background-image: linear-gradient(to bottom, #E4CCE8 2%, #FADFDE 20%, white, #B2D3F6 95%);
+                height: 90%;
+                border-radius: 0 0 1rem 1rem;
+                display: flex;
+                flex-direction: column;
+                gap: 3rem;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+
+                .button {
+                    width: 80%;
+                }
+
+
+            }
+        }
+    }
+
+
+}
