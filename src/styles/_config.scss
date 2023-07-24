@@ -45,25 +45,25 @@ $XL: 1440px;
 }
 
 @mixin S {
-    @media (max-width: $S) {
+    @media (min-width: $XS) and (max-width: $S) {
         @content;
     }
 }
 
 @mixin M {
-    @media (max-width: $M) {
+    @media (min-width: $S) and (max-width: $M) {
         @content;
     }
 }
 
 @mixin L {
-    @media (max-width: $L) {
+    @media (min-width: $M) and (max-width: $L) {
         @content;
     }
 }
 
 @mixin XL {
-    @media (max-width: $XL) {
+    @media (min-width: $L) and (max-width: $XL) {
         @content;
     }
 }

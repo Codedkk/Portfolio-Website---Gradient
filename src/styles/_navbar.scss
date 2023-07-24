@@ -15,17 +15,17 @@ body {
 
     @extend .container;
 
-    // // @media (min-width: $XXS) and (max-width: $XS) {
-    // //     .container {
-    // //         margin: 0 $margin-3 0 $margin-3;
-    // //     }
-    // // }
+    @media (min-width: $XXS) and (max-width: $XS) {
+        .container {
+            margin: 0 $margin-3 0 $margin-3;
+        }
+    }
 
-    // @include XS {
-    //     .container {
-    //         margin: 0 $margin-3 0 $margin-3;
-    //     }
-    // }
+    @include XS {
+        .container {
+            margin: 0 $margin-3 0 $margin-3;
+        }
+    }
 
     .nav_right {
         padding-top: $padding-1;

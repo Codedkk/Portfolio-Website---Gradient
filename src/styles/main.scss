@@ -1,9 +1,15 @@
 // @use "reset";
-@use "reset";
-@use "config";
-@use "navbar";
-@use "button";
-@use "hero";
+@forward "reset";
+@forward "config";
+@forward "navbar";
+@forward "button";
+@forward "hero";
+
+// @use "reset";
+// @use "config";
+// @use "navbar";
+// @use "button";
+// @use "hero";
 
 .app {
     .link {
