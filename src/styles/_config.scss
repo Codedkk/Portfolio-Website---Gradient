@@ -15,9 +15,12 @@ $color-accent-2: #639BB2;
 
 // ----- margin -----
 $margin-1: 1rem;
+$margin-2: 1.25rem;
+$margin-3: 2rem; //32px
 
 // ----- padding -----
 $padding-1: 1.25rem; //20px
+
 
 // ----- breakpoints -----
 $XXS: 390px;
@@ -27,12 +30,57 @@ $M: 992px;
 $L: 1200px;
 $XL: 1440px;
 
-// ----- breakpoints -----
+//0--max-390-max-576---768
+
+@mixin XXS {
+    @media (max-width: $XXS) {
+        @content;
+    }
+}
+
+@mixin XS {
+    @media (min-width: $XXS) and (max-width: $XS) {
+        @content;
+    }
+}
+
+@mixin S {
+    @media (max-width: $S) {
+        @content;
+    }
+}
+
+@mixin M {
+    @media (max-width: $M) {
+        @content;
+    }
+}
+
+@mixin L {
+    @media (max-width: $L) {
+        @content;
+    }
+}
+
+@mixin XL {
+    @media (max-width: $XL) {
+        @content;
+    }
+}
+
+//   // usage
+//     @include for-desktop-up {
+//       padding: 20px;
+//     }
+//   }
+
+
+// ----- button -----
 $height-button-1: 3.375rem;
 
 // ----- container -----
 .container {
     max-width: 100%;
-    margin: 0 $padding-1 0 $padding-1;
+    margin: 0 $margin-2 0 $margin-2;
 
 }

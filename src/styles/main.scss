@@ -1,8 +1,9 @@
-@import "reset";
-@import "config";
-@import "navbar";
-@import "button";
-@import "hero";
+// @use "reset";
+@use "reset";
+@use "config";
+@use "navbar";
+@use "button";
+@use "hero";
 
 .app {
     .link {

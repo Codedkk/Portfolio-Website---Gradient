@@ -1,11 +1,12 @@
 body {
     background-image: url(../../public/asset/img/gradient.png);
-    background-size: 155%;
+    background-size: 150%;
     background-repeat: no-repeat;
-    background-position: -6.9rem -3rem;
+    background-position: center top;
 }
 
 .navbar {
+
     font-family: $ff-title;
     display: flex;
     align-items: center;
@@ -13,6 +14,18 @@ body {
     color: $clr-text;
 
     @extend .container;
+
+    // // @media (min-width: $XXS) and (max-width: $XS) {
+    // //     .container {
+    // //         margin: 0 $margin-3 0 $margin-3;
+    // //     }
+    // // }
+
+    // @include XS {
+    //     .container {
+    //         margin: 0 $margin-3 0 $margin-3;
+    //     }
+    // }
 
     .nav_right {
         padding-top: $padding-1;
@@ -45,7 +58,6 @@ body {
                 .button {
                     width: 80%;
                 }
-
 
             }
         }

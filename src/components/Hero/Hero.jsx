@@ -12,8 +12,10 @@ const Hero = () => {
             <button className="button button-hero">✧ Say HI! ✧</button>
             <div className="hero_social">
                 <i className="fa-brands fa-github"></i>
-                <i className="fa-solid fa-envelope"></i>
                 <i className="fa-brands fa-linkedin-in"></i>
+                <i className="fa-regular fa-envelope"></i>
+
+
             </div>
 
             <div style={{ height: "100rem" }}></div>
