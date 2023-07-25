@@ -1,8 +1,13 @@
-import React from 'react'
+import React from 'react';
+import Blobs from './Blobs';
 
 const Projects = () => {
     return (
-        <div>Projects</div>
+        <div className="projects">
+            <div>hi</div>
+            {/* <Blobs /> */}
+        </div>
+
     )
 }
 

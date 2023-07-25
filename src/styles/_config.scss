@@ -6,6 +6,9 @@ $ff-text: "Cabinet Grotesk", sans-serif;
 $fs-logo: 1.5rem;
 $fs-title: 1.875rem;
 $fs-social: 1.4rem;
+$fs-nav-button: 1rem; //14px
+$fs-text-s: 0.875rem; //14px
+
 
 
 // ----- color -----
@@ -14,13 +17,18 @@ $color-accent-1: #F7C8C7;
 $color-accent-2: #639BB2;
 
 // ----- margin -----
-$margin-1: 1rem;
-$margin-2: 1.25rem;
-$margin-3: 2rem; //32px
+$margin-1: .5rem;
+$margin-2: 1rem;
+$margin-3: 1.25rem;
+$margin-3-1: 1.75rem;
+$margin-4: 2rem; //32px
+$margin-5: 3rem; //48
+$margin-6: 4rem; //64 
+$margin-7: 5rem; //80
 
 // ----- padding -----
 $padding-1: 1.25rem; //20px
-
+$padding-2: 2rem; //20px
 
 // ----- breakpoints -----
 $XXS: 390px;
@@ -30,57 +38,79 @@ $M: 992px;
 $L: 1200px;
 $XL: 1440px;
 
-//0--max-390-max-576---768
-
-@mixin XXS {
-    @media (max-width: $XXS) {
+@mixin C {
+    @media (max-width: 1440px) {
         @content;
     }
 }
 
-@mixin XS {
-    @media (min-width: $XXS) and (max-width: $XS) {
+@mixin B {
+    @media (max-width: 992px) {
         @content;
     }
 }
 
-@mixin S {
-    @media (min-width: $XS) and (max-width: $S) {
+@mixin A {
+    @media (max-width: 768px) {
         @content;
     }
 }
 
-@mixin M {
-    @media (min-width: $S) and (max-width: $M) {
-        @content;
-    }
-}
-
-@mixin L {
-    @media (min-width: $M) and (max-width: $L) {
-        @content;
-    }
-}
-
-@mixin XL {
-    @media (min-width: $L) and (max-width: $XL) {
-        @content;
-    }
-}
-
-//   // usage
-//     @include for-desktop-up {
-//       padding: 20px;
+///////////////////////////////
+// @mixin S {
+//     @media ($XS <=width < $S) {
+//         @content;
 //     }
-//   }
+// }
 
+// @mixin M {
+//     @media ($S <=width < $M) {
+//         @content;
+//     }
+// }
+
+// @mixin L {
+//     @media ($M <=width < $XL) {
+//         @content;
+//     }
+// }
+
+// @mixin XL {
+//     @media (width >=$XL) {
+//         @content;
+//     }
+// }
+
+///////////////////////////////
+// @mixin S {
+//     @media (min-width: $XS) and (max-width:$S) {
+//         @content;
+//     }
+// }
+
+// @mixin M {
+//     @media (min-width: $S) and (max-width:$M) {
+//         @content;
+//     }
+// }
+
+// @mixin L {
+//     @media (min-width: $M) and (max-width:$XL) {
+//         @content;
+//     }
+// }
+
+// @mixin XL {
+//     @media (min-width: $XL) {
+//         @content;
+//     }
+// }
 
 // ----- button -----
 $height-button-1: 3.375rem;
 
-// ----- container -----
+// ----- container ----- 
 .container {
-    max-width: 100%;
-    margin: 0 $margin-2 0 $margin-2;
-
+    // max-width: 45em;
+    margin: $margin-1 $margin-2;
 }

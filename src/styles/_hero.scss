@@ -1,53 +1,53 @@
-.hero {
+// .hero {
 
-    @extend .container;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding-top: $padding-1;
-    gap: 1.7rem;
-
-
-
-    .hero_text {
-        font-family: $ff-title;
-        font-size: $fs-title;
-        display: grid;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        color: $clr-text;
-        line-height: 39px;
-
-        .hero_text-second {
-            text-decoration: underline;
-            text-decoration-thickness: 1.5px;
-            text-underline-offset: 2px;
-        }
+//     @extend .container;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//     text-align: center;
+//     padding-top: $padding-1;
+//     gap: 1.7rem;
 
 
-    }
 
-    .button-hero {
-        display: flex;
-        background: transparent;
-        width: 100%;
-        margin-top: $margin-1;
+//     .hero_text {
+//         font-family: $ff-title;
+//         font-size: $fs-title;
+//         display: grid;
+//         align-items: center;
+//         justify-content: center;
+//         text-align: center;
+//         color: $clr-text;
+//         line-height: 39px;
 
-        @include XS {
-            width: 50%;
-        }
-    }
-
-    .hero_social {
-        display: flex;
-        gap: 2rem;
-        font-size: $fs-social;
-        color: $clr-text;
-        margin-top: $margin-1;
-    }
+//         .hero_text-second {
+//             text-decoration: underline;
+//             text-decoration-thickness: 1.5px;
+//             text-underline-offset: 2px;
+//         }
 
 
-}
+//     }
+
+//     .button-hero {
+//         display: flex;
+//         background: transparent;
+//         width: 100%;
+//         margin-top: $margin-1;
+
+//         // @include XS {
+//         //     width: 50%;
+//         // }
+//     }
+
+//     .hero_social {
+//         display: flex;
+//         gap: 2rem;
+//         font-size: $fs-social;
+//         color: $clr-text;
+//         margin-top: $margin-1;
+//     }
+
+
+// }

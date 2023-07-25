@@ -4,12 +4,18 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
     const [navOpen, setNavOpen] = useState(false)
     return (
-        <div className="navbar">
+        <nav className="navbar container">
             <div className="nav_left">
                 <Link to="/" className="logo link">KOliGREEN</Link>
             </div>
             <div className="nav_right">
-                {/* <div className="nav_right-m"></div> */}
+                <div className="nav_right-s" >
+                    <Link to="/project" className="link">PROJECTS</Link>
+                    <Link to="/project" className="link">RESUME</Link>
+                    <Link to="/project" className="link">ABOUT</Link>
+                    <button className="button button-nav">✧ Say HI! ✧</button>
+                </div>
+
                 <div className="nav_right-xxs">
                     <i className="fa-solid fa-ellipsis" onClick={() => setNavOpen(!navOpen)}></i>
                     {navOpen && <div className="ham-menu">
@@ -20,7 +26,7 @@ const Navbar = () => {
                 </div>
             </div>
 
-        </div>
+        </nav>
     )
 }
 

@@ -1,15 +1,23 @@
-// @use "reset";
-@forward "reset";
-@forward "config";
-@forward "navbar";
-@forward "button";
-@forward "hero";
+// @forward "reset";
+// @forward "config";
+// @forward "navbar";
+// @forward "button";
+// @forward "hero";
 
 // @use "reset";
 // @use "config";
 // @use "navbar";
 // @use "button";
 // @use "hero";
+
+@import "reset";
+@import "config";
+@import "navbar";
+@import "button";
+@import "hero";
+@import "projects";
+@import "blobs";
+
 
 .app {
     .link {
