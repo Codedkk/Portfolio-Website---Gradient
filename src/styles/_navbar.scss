@@ -6,105 +6,32 @@ body {
 }
 
 .navbar {
-    max-width: 100%;
     font-family: $ff-title;
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: $clr-text;
+    // max-width: 100%;
 
     .logo {
         font-size: $fs-logo;
     }
 
-    .button-nav {
-        background: transparent;
-        word-spacing: 5px;
-        letter-spacing: 1px;
-        width: 12rem;
-        font-size: $fs-nav-button;
-    }
 
     .nav_right {
-        .nav_right-s {
-            display: flex;
-            place-items: center;
-            gap: 2.5rem;
-            font-size: $fs-text-s;
-            font-family: $ff-text;
-            font-weight: 500;
-            letter-spacing: 1.5px;
-            line-height: 21px;
+        display: none;
+    }
+
+
+
+    @include S {
+        .nav_right {
+            display: inline;
         }
 
-        .nav_right-xxs {
+        .menu {
             display: none;
         }
     }
 
-    @include C {}
-
-    @include B {
-
-        .nav_right {
-            .nav_right-xxs {
-                padding: $padding-1 0;
-                display: inline;
-
-                .ham-menu {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    background-image: linear-gradient(to bottom, #E4CCE8 2%, #FADFDE 20%, white, #B2D3F6 95%);
-                    height: 90%;
-                    border-radius: 0 0 1rem 1rem;
-                    display: flex;
-                    flex-direction: column;
-                    gap: 3rem;
-                    align-items: center;
-                    justify-content: center;
-                    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-
-                    .ham-menu-close {
-                        position: absolute;
-                        top: 10%;
-                        right: 12%;
-
-                    }
-
-                    .button {
-                        width: 80%;
-                    }
-
-                }
-            }
-
-            .nav_right-s {
-                display: none;
-            }
-        }
-
-
-    }
-
-
-}
-
-@include A {
-    .container {
-        margin: $margin-1 $margin-4;
-    }
-}
-
-@include B {
-    .container {
-        margin: $margin-3-1 $margin-5;
-    }
-}
-
-@include C {
-    .container {
-        margin: $margin-4 $margin-7;
-    }
 }

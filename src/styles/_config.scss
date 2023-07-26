@@ -12,8 +12,8 @@ $fs-text-s: 0.875rem; //14px
 // ----- color -----
 $clr-text: #1B1212;
 $color-accent-1: #F7C8C7;
+// $color-accent-2: #5C99B1;
 $color-accent-2: #639BB2;
-
 // ----- margin -----
 $margin-1: .5rem;
 $margin-2: 1rem;
@@ -36,23 +36,62 @@ $M: 992px;
 $L: 1200px;
 $XL: 1440px;
 
-@mixin C {
-    @media (max-width: 1440px) {
+@mixin XS {
+    @media (min-width: $XS) {
         @content;
     }
 }
 
-@mixin B {
-    @media (max-width: 992px) {
+@mixin S {
+    @media (min-width: $S) {
         @content;
     }
 }
 
-@mixin A {
-    @media (max-width: 768px) {
+@mixin M {
+    @media (min-width: $S) {
         @content;
     }
 }
+
+@mixin L {
+    @media (min-width: $S) {
+        @content;
+    }
+}
+
+@mixin XL {
+    @media (min-width: $S) {
+        @content;
+    }
+}
+
+//for the rest and nav menu
+
+@mixin S {
+    @media (min-width: $S) {
+        @content;
+    }
+}
+
+///////////////////////////////////////
+// @mixin C {
+//     @media (max-width: 1440px) {
+//         @content;
+//     }
+// }
+
+// @mixin B {
+//     @media (max-width: 992px) {
+//         @content;
+//     }
+// }
+
+// @mixin A {
+//     @media (max-width: 768px) {
+//         @content;
+//     }
+// }
 
 ///////////////////////////////
 // @mixin S {
