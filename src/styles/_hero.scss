@@ -1,53 +1,127 @@
-// .hero {
+.hero {
 
-//     @extend .container;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     justify-content: center;
-//     text-align: center;
-//     padding-top: $padding-1;
-//     gap: 1.7rem;
+    @extend .container;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: $padding-1-1;
+    gap: 1.8rem;
 
+    .hero_text {
+        padding-inline: 35px;
+        width: 100%;
+        display: inline-block;
+        font-family: $ff-title;
+        font-size: $fs-title;
+        font-weight: $fw-200;
+        text-align: center;
+        color: $clr-text;
+        line-height: 39px;
+        letter-spacing: -0.6px;
 
+        .hero_text-first,
+        .hero_text-second,
+        .hero_text-third {
+            display: inline-block;
 
-//     .hero_text {
-//         font-family: $ff-title;
-//         font-size: $fs-title;
-//         display: grid;
-//         align-items: center;
-//         justify-content: center;
-//         text-align: center;
-//         color: $clr-text;
-//         line-height: 39px;
-
-//         .hero_text-second {
-//             text-decoration: underline;
-//             text-decoration-thickness: 1.5px;
-//             text-underline-offset: 2px;
-//         }
-
-
-//     }
-
-//     .button-hero {
-//         display: flex;
-//         background: transparent;
-//         width: 100%;
-//         margin-top: $margin-1;
-
-//         // @include XS {
-//         //     width: 50%;
-//         // }
-//     }
-
-//     .hero_social {
-//         display: flex;
-//         gap: 2rem;
-//         font-size: $fs-social;
-//         color: $clr-text;
-//         margin-top: $margin-1;
-//     }
+            .hero_text-style {
+                display: inline-block;
+                font-family: $ff-style;
+                margin: 1rem 0 0 .5rem;
+                font-size: 4rem;
+            }
+        }
 
 
-// }
+        .hero_text-first {
+            span:nth-child(2) {
+                text-decoration: underline;
+                text-decoration-thickness: 1px;
+                text-underline-offset: 4px;
+            }
+
+        }
+
+    }
+
+    .button-hero {
+        display: flex;
+        background: transparent;
+        width: 100%;
+        margin-top: $margin-1;
+
+        // @include XS {
+        //     width: 50%;
+        // }
+    }
+
+    .hero_social {
+        display: flex;
+        gap: 2rem;
+        font-size: $fs-social;
+        color: $clr-text;
+        margin-top: $margin-1;
+    }
+
+    //might change 
+    @include XS {
+        .hero_text {
+            margin-top: $margin-3 ;
+        }
+
+        .button-hero {
+            width: 13rem;
+        }
+    }
+
+    @include S {
+        .hero_text {
+            font-size: $fs-title-s;
+            line-height: 45px;
+        }
+    }
+
+    @include M {
+        .hero_text {
+            font-size: $fs-title-m;
+            line-height: 60px;
+        }
+
+        .button-hero {
+            width: 18rem;
+            margin: $margin-3;
+        }
+
+    }
+
+
+    @include L {
+        .hero_text {
+            font-size: $fs-title-L;
+            line-height: 80px;
+
+            .hero_text-second {
+                .hero_text-style {
+                    margin-left: $margin-2;
+                    font-size: calc(#{$fs-title-L} + 4rem);
+                }
+            }
+
+
+        }
+
+        .button-hero {
+            font-size: $fs-text-l;
+            height: $height-button-2;
+            width: 19rem;
+            font-weight: 400;
+        }
+
+        .hero_social {
+            font-size: $fs-title;
+        }
+    }
+}
