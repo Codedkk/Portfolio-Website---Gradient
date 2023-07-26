@@ -5,13 +5,57 @@ body {
     background-position: center top;
 }
 
+.container {
+    margin: $margin-2;
+}
+
+@include XS {
+    .container {
+        margin: $margin-2 $margin-5;
+    }
+
+}
+
+@include S {
+    .container {
+        margin: $margin-3 $margin-4-1;
+    }
+}
+
+@include M {
+    .container {
+        margin: $margin-4 $margin-6-1;
+    }
+}
+
+@include L {
+    .container {
+        margin: $margin-5 $margin-8;
+    }
+}
+
+
+@include XL {
+    .container {
+        margin: $margin-5 $margin-9;
+    }
+}
+
 .navbar {
     font-family: $ff-title;
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: $clr-text;
+    font-weight: $fw-500;
     // max-width: 100%;
+
+    .menu {
+        .ham-menu-close {
+            font-size: $fs-text-s;
+        }
+    }
+
 
     .logo {
         font-size: $fs-logo;
@@ -24,9 +68,26 @@ body {
 
 
 
+
     @include S {
         .nav_right {
-            display: inline;
+            display: flex;
+            max-width: 100%;
+            font-family: $ff-text;
+
+
+            .navbar-menu {
+                display: flex;
+                // max-width: 100%;
+                gap: 3.5rem;
+                place-items: center;
+
+
+                .button-nav {
+                    width: 12rem;
+                    margin-left: -1.5rem;
+                }
+            }
         }
 
         .menu {
