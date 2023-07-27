@@ -1,9 +1,14 @@
-import React from 'react'
+import React from 'react';
 
-const About = () => {
+const About = ({ handleClick, openAccordion, children }) => {
     return (
-        <div>About</div>
-    )
-}
+        <div>
+            <div onClick={handleClick}>
+                About Content
+            </div>
+            {openAccordion && <div>{children}</div>}
+        </div>
+    );
+};
 
-export default About
+export default About;

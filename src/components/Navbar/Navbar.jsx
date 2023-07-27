@@ -14,7 +14,7 @@ const Navbar = () => {
                     <Link to="/project" className="link">PROJECTS</Link>
                     <Link to="/project" className="link">RESUME</Link>
                     <Link to="/project" className="link">ABOUT</Link>
-                    <button className="button button-nav">✧ Say HI! ✧</button>
+                    <button className="button button-nav">WORK WITH ME</button>
                 </div>
             </div>
 

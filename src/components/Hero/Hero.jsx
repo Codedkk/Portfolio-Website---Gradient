@@ -25,8 +25,6 @@ const Hero = () => {
                 </span>
                 {/* <span className="hero_text-first">
                     <span>Koli is a</span>&nbsp;
-
-
                     <span className="hero_text-second">
                         <span><span>✷︎ </span><span>marketing strategist</span></span>&nbsp;</span>
 
@@ -44,9 +42,6 @@ const Hero = () => {
 
 
             </div>
-
-            <div style={{ height: "100rem" }}></div>
-
         </div>
     )
 }
