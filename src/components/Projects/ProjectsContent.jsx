@@ -4,28 +4,28 @@ import ProjectsCard from './ProjectsCard';
 const projectInfo = [
     {
         projectTitle: "fashion ecommerce",
-        thumbnail: "public/asset/img/ProjectsContent/Projects-hallow/98t76P6U4fX5d3dQT0H4W8mjM.png",
-        brief: ["fully responsive with user-centricity", "combined with API real life data fetching"],
+        thumbnail: "public/asset/img/ProjectsContent/Free_MacBook_Pro_1.jpeg",
+        brief: ["Fully responsive with user-centricity", "Combined with API real life data fetching"],
         stacks: ["react", "sass", "gsap"]
     },
     {
         projectTitle: "Real World TODO App",
-        thumbnail: "public/asset/img/ProjectsContent/Projects-ecom/ecom1.png",
-        brief: ["fully responsive with user-centricity", "combined with API real life data fetching"],
+        thumbnail: "public/asset/img/ProjectsContent/Free_Iphone_13_Pro_Mockup_1.jpeg",
+        brief: ["Fully responsive with user-centricity", "Combined with API real life data fetching"],
         stacks: ["react", "sass", "gsap"]
     },
     {
         projectTitle: "hallow",
-        thumbnail: "public/asset/img/ProjectsContent/Projects-hallow/red-white-cat-i-white-studio.jpg",
-        brief: ["fully responsive with user-centricity",
-            "combined with API real life data fetching",],
+        thumbnail: "public/asset/img/ProjectsContent/Free_MacBook_Pro_1.jpeg",
+        brief: ["Fully responsive with user-centricity",
+            "Combined with API real life data fetching",],
         stacks: ["react", "sass", "js"]
     },
     {
         projectTitle: "influencer portfolio",
-        thumbnail: "public/asset/img/ProjectsContent/Projects-ecom/ecom2.png",
-        brief: ["fully responsive with user-centricity",
-            "combined with API real life data fetching",],
+        thumbnail: "public/asset/img/ProjectsContent/Free_iPhone_12_Mockup_3.jpeg",
+        brief: ["Fully responsive with user-centricity",
+            "Combined with API real life data fetching",],
         stacks: ["react", "sass", "js"]
     }
 
@@ -40,7 +40,7 @@ const stacksInfo = {
 
 const ProjectsContent = () => {
     return (
-        <div>
+        <div className='ProjectsContent'>
             {projectInfo.map((project, index) => (
                 <ProjectsCard
                     key={index}

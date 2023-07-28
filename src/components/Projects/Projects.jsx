@@ -29,11 +29,12 @@ const Projects = ({ handleClick, openAccordion, children }) => {
     return (
         <div>
             <div onClick={handleToggleChildren} className="projects-header container">
-                <div className="header-line"></div>
+                <div className="header-line line-1"></div>
                 <div className="projects-heading">
                     <div className="projects-title">Projects</div>
-                    <div className="header-arrow">&gt;</div>
+                    <div className="header-arrow "><i className="fa-sharp fa-solid fa-angle-down" ></i></div>
                 </div>
+                <div className="header-line line-2"></div>
             </div>
             {showChildren && <div>{children}</div>}
         </div>

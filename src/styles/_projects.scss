@@ -4,7 +4,25 @@
     }
 }
 
-.header-line {
-    border-top: 1px solid black;
-    width: 10rem;
+
+.projects-header {
+    margin-top: $margin-7;
+    font-family: $ff-text;
+    font-size: $fs-text-l;
+
+    .header-line {
+        border-top: 1px solid black;
+        width: 100%;
+    }
+
+    .projects-heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: $margin-3 0 $margin-3 0;
+
+        .header-arrow {
+            font-size: $fs-text-s;
+        }
+    }
 }

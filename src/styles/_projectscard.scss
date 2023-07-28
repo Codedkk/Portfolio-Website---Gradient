@@ -1,0 +1,45 @@
+.projects-card {
+    img {
+        width: 30rem;
+
+    }
+
+    font-family: $ff-text;
+
+    .header-line {
+        border-top: 1px solid black;
+        width: 100%;
+    }
+
+    .card-content {
+        display: flex;
+        flex-direction: column;
+        gap: $margin-3;
+        margin-top: $margin-4;
+
+        .card-right {
+            gap: $margin-3;
+            display: flex;
+            flex-direction: column;
+
+            .card-title {
+                text-transform: uppercase;
+
+            }
+
+
+            .stack-icons {
+                display: flex;
+                gap: 70%;
+                width: 1.3rem;
+            }
+        }
+
+        .project-thumbnail {
+            margin-bottom: $margin-2;
+
+        }
+    }
+
+
+}
