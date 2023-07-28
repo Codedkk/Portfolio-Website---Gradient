@@ -2,7 +2,7 @@ import React from 'react';
 
 const ProjectsCard = ({ projectTitle, thumbnail, brief, stacks, stacksInfo }) => {
     return (
-        <div className="projects-card">
+        <div className="projects-card container">
             <div className="header-line"></div>
 
             <div className="card-right">

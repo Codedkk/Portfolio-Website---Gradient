@@ -14,6 +14,21 @@ const projectInfo = [
         brief: ["fully responsive with user-centricity", "combined with API real life data fetching"],
         stacks: ["react", "sass", "gsap"]
     },
+    {
+        projectTitle: "hallow",
+        thumbnail: "public/asset/img/ProjectsContent/Projects-hallow/red-white-cat-i-white-studio.jpg",
+        brief: ["fully responsive with user-centricity",
+            "combined with API real life data fetching",],
+        stacks: ["react", "sass", "js"]
+    },
+    {
+        projectTitle: "influencer portfolio",
+        thumbnail: "public/asset/img/ProjectsContent/Projects-ecom/ecom2.png",
+        brief: ["fully responsive with user-centricity",
+            "combined with API real life data fetching",],
+        stacks: ["react", "sass", "js"]
+    }
+
 ];
 
 const stacksInfo = {
@@ -41,52 +56,3 @@ const ProjectsContent = () => {
 };
 
 export default ProjectsContent;
-
-
-// {
-//     projectTitle: "hallow",
-//     thumbnail: "public/asset/img/ProjectsContent/Projects-hallow/red-white-cat-i-white-studio.jpg",
-//     brief: ["fully responsive with user-centricity",
-//         "combined with API real life data fetching",],
-//     stacks: ["react", "sass", "mui"]
-// },
-// {
-//     projectTitle: "influencer portfolio",
-//     thumbnail: "public/asset/img/ProjectsContent/Projects-ecom/ecom2.png",
-//     brief: ["fully responsive with user-centricity",
-//         "combined with API real life data fetching",],
-//     stacks: ["react", "sass", "mui"]
-// },
-
-
- // <div>
-        //     <ProjectsCard projectTitle={projectTitle}></ProjectsCard>
-        // </div>
-
-        // <div className="projectsContent">
-        //     <div className="project-first">
-        //         <h2>Project Hallow</h2>
-        //         <div className="project-img">
-        //             <img src="public/asset/img/ProjectsContent/Projects-hallow/98t76P6U4fX5d3dQT0H4W8mjM.png" alt="" />
-        //         </div>
-        //     </div>
-        //     <div className="project-second">
-        //         <h2>Project Ecom</h2>
-        //         <div className="project-img">
-        //             <img src="public/asset/img/ProjectsContent/Projects-ecom/ecom1.png" alt="" />
-        //         </div>
-        //     </div>
-        //     <div className="project-third">
-        //         <h2>Project TODO APP</h2>
-        //         <div className="project-img">
-        //             <img src="public/asset/img/ProjectsContent/Projects-hallow/red-white-cat-i-white-studio.jpg" alt="" />
-        //         </div>
-        //     </div>
-        //     <div className="project-third">
-        //         <h2>Project TODO APP</h2>
-        //         <div className="project-img">
-        //             <img src="public/asset/img/ProjectsContent/Projects-ecom/ecom2.png" alt="" />
-        //         </div>
-        //     </div>
-
-        // </div>
