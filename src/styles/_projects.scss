@@ -1,3 +1,9 @@
+@include S {
+    .projects-header {
+        display: none;
+    }
+}
+
 .header-line {
     border-top: 1px solid black;
     width: 20rem;
