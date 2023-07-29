@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const Projects = ({ handleClick, openAccordion, children }) => {
+const AccordionItem = ({ title, handleClick, isOpen, children }) => {
     const [showChildren, setShowChildren] = useState(false);
 
     const handleToggleChildren = () => {
@@ -13,26 +13,28 @@ const Projects = ({ handleClick, openAccordion, children }) => {
             if (e.matches) {
                 setShowChildren(true);
             } else {
-                setShowChildren(openAccordion);
+                setShowChildren(isOpen);
             }
         };
 
-        setShowChildren(mediaQuery.matches || openAccordion);
+        setShowChildren(mediaQuery.matches || isOpen);
 
         mediaQuery.addEventListener('change', handleMediaQueryChange);
 
         return () => {
             mediaQuery.removeEventListener('change', handleMediaQueryChange);
         };
-    }, [openAccordion]);
+    }, [isOpen]);
 
     return (
         <div>
             <div onClick={handleToggleChildren} className="projects-header container">
                 <div className="header-line line-1"></div>
                 <div className="projects-heading">
-                    <div className="projects-title">Projects</div>
-                    <div className="header-arrow "><i className="fa-sharp fa-solid fa-angle-down" ></i></div>
+                    <div className="projects-title">{title}</div>
+                    <div className="header-arrow ">
+                        <i className="fa-sharp fa-solid fa-angle-down"></i>
+                    </div>
                 </div>
                 <div className="header-line line-2"></div>
             </div>
@@ -41,4 +43,4 @@ const Projects = ({ handleClick, openAccordion, children }) => {
     );
 };
 
-export default Projects;
+export default AccordionItem;

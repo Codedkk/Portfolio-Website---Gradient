@@ -1,8 +1,7 @@
-import About from '../About/About'
-import Resume from '../Resume/Resume'
-import React from 'react'
-import Projects from '../Projects/Projects'
-import { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import AccordionItem from './AccordionItem';
+import About from '../About/About';
+import Resume from '../Resume/Resume';
 import ProjectsContent from '../Projects/ProjectsContent';
 import AboutContent from '../About/AboutContent';
 import ResumeContent from '../Resume/ResumeContent';
@@ -20,17 +19,29 @@ const Accordion = () => {
 
     return (
         <div>
-            <Projects handleClick={() => handleAccordionClick('projects')} openAccordion={openAccordion === 'projects'}>
+            <AccordionItem
+                title="Projects"
+                handleClick={() => handleAccordionClick('projects')}
+                isOpen={openAccordion === 'projects'}
+            >
                 <ProjectsContent />
-            </Projects>
+            </AccordionItem>
 
-            <About handleClick={() => handleAccordionClick('about')} openAccordion={openAccordion === 'about'}>
-                <AboutContent />
-            </About>
-
-            <Resume handleClick={() => handleAccordionClick('resume')} openAccordion={openAccordion === 'resume'}>
+            <AccordionItem
+                title="Resume"
+                handleClick={() => handleAccordionClick('resume')}
+                isOpen={openAccordion === 'resume'}
+            >
                 <ResumeContent />
-            </Resume>
+            </AccordionItem>
+
+            <AccordionItem
+                title="About"
+                handleClick={() => handleAccordionClick('about')}
+                isOpen={openAccordion === 'about'}
+            >
+                <AboutContent />
+            </AccordionItem>
         </div>
     );
 };

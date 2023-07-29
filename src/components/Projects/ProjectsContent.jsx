@@ -49,11 +49,11 @@ const ProjectsContent = () => {
                     thumbnail={project.thumbnail}
                     brief={project.brief}
                     stacks={project.stacks}
-                    stacksInfo={stacksInfo} // Pass stacksInfo as a prop to ProjectsCard
+                    stacksInfo={stacksInfo}
                 />
             ))}
 
-            <div className="header-line"></div>
+            {/* <div className="header-line"></div> */}
         </div>
     );
 };
