@@ -1,8 +1,4 @@
 .projects-card {
-    img {
-        width: 30rem;
-
-    }
 
     font-family: $ff-text;
 
@@ -15,23 +11,57 @@
         display: flex;
         flex-direction: column;
         gap: $margin-3;
-        margin-top: $margin-4;
+        margin: $margin-4 0 $margin-4 0;
+
 
         .card-right {
             gap: $margin-3;
             display: flex;
             flex-direction: column;
 
-            .card-title {
-                text-transform: uppercase;
-
-            }
-
-
-            .stack-icons {
+            .card-heading {
                 display: flex;
-                gap: 70%;
-                width: 1.3rem;
+                flex-direction: column;
+
+
+                .card-title {
+                    text-transform: uppercase;
+                    display: flex;
+                    gap: 5%;
+                    align-items: center;
+                    justify-content: flex-start;
+
+                    .card-live {
+                        font-size: .5rem;
+                    }
+
+                }
+
+
+                .stack-icons {
+                    margin: $margin-3 0 $margin-1 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 5%;
+                    margin-right: 10rem;
+                    // width: 5%;
+
+
+
+                    .stack-icon {
+                        width: 1.3rem;
+                    }
+                }
+
+                .card-button {
+                    width: 6rem;
+                    font-size: 1px;
+                    height: 1.5rem;
+
+                    border: 1px solid $clr-text;
+                    font-weight: $fw-400;
+                }
             }
         }
 
@@ -42,4 +72,92 @@
     }
 
 
+    @include S {
+        display: flex;
+        flex-direction: column-reverse;
+
+
+        .card-content {
+            font-size: $fs-text-l;
+            display: flex;
+            flex-direction: column-reverse;
+
+            .card-right {
+                display: flex;
+                flex-direction: column;
+
+                .card-heading {
+                    display: flex;
+                    gap: 5%;
+
+                    .stack-icons {
+                        .stack-icon {
+                            font-size: 5rem;
+                        }
+                    }
+
+                }
+
+            }
+
+        }
+
+
+
+    }
+
+    @include M {
+        .card-content {
+            font-size: $fs-social;
+
+            .card-right {
+
+                .card-heading {
+                    .card-title {
+
+                        .card-live {
+                            font-size: 1rem;
+                        }
+
+                    }
+
+                    .stack-icons {
+                        .stack-icon {
+                            width: 2rem;
+                        }
+
+                        .card-button {
+                            font-size: 1rem;
+                            width: 20%;
+                            height: 2.8rem;
+                        }
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+    @include L {
+        .card-content {
+            font-size: $fs-logo;
+        }
+
+
+        .card-right {
+
+            .card-heading {
+                .card-title {
+
+                    .card-live {
+                        font-size: 1.5rem;
+                    }
+
+                }
+            }
+        }
+    }
 }

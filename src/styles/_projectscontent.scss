@@ -1,0 +1,33 @@
+.projects-content {
+    .header-line {
+        border-top: 1px solid black;
+        width: 100%;
+    }
+
+    .projects-title {
+        display: none;
+    }
+
+    @include S {
+        margin-top: 25%;
+
+        .projects-title {
+            display: block;
+            font-size: $fs-social;
+        }
+
+    }
+
+    @include M {
+        .projects-title {
+            font-size: calc($fs-logo + .2rem);
+        }
+    }
+
+    @include L {
+        .projects-title {
+            font-size: calc($fs-logo + .3rem);
+        }
+    }
+
+}

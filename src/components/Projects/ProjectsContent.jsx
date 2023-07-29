@@ -3,9 +3,9 @@ import ProjectsCard from './ProjectsCard';
 
 const projectInfo = [
     {
-        projectTitle: "fashion ecommerce",
+        projectTitle: "fashion ecommerce website",
         thumbnail: "public/asset/img/ProjectsContent/Free_MacBook_Pro_1.jpeg",
-        brief: ["Fully responsive with user-centricity", "Combined with API real life data fetching"],
+        brief: ["Fully responsive with user-centricity Lorem ipsum dolor sit amet conser adipisicing elit. Reiciendis, non.", "Combined with API real life data fetching"],
         stacks: ["react", "sass", "gsap"]
     },
     {
@@ -40,7 +40,8 @@ const stacksInfo = {
 
 const ProjectsContent = () => {
     return (
-        <div className='ProjectsContent'>
+        <div className='projects-content container'>
+            <div className="projects-title">PROJECTS</div>
             {projectInfo.map((project, index) => (
                 <ProjectsCard
                     key={index}
@@ -51,6 +52,8 @@ const ProjectsContent = () => {
                     stacksInfo={stacksInfo} // Pass stacksInfo as a prop to ProjectsCard
                 />
             ))}
+
+            <div className="header-line"></div>
         </div>
     );
 };
