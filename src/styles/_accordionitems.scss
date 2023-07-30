@@ -5,7 +5,6 @@
 }
 
 .projects-header {
-    margin-top: 15%;
     font-family: $ff-text;
     font-size: $fs-text-l;
 
@@ -24,4 +23,11 @@
             font-size: $fs-text-s;
         }
     }
+}
+
+.resume-header-line {
+    border-top: 1px solid black;
+    width: 100%;
+
+
 }

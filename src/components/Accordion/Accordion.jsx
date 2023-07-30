@@ -28,6 +28,14 @@ const Accordion = () => {
             </AccordionItem>
 
             <AccordionItem
+                title="About"
+                handleClick={() => handleAccordionClick('about')}
+                isOpen={openAccordion === 'about'}
+            >
+                <AboutContent />
+            </AccordionItem>
+
+            <AccordionItem
                 title="Resume"
                 handleClick={() => handleAccordionClick('resume')}
                 isOpen={openAccordion === 'resume'}
@@ -35,13 +43,6 @@ const Accordion = () => {
                 <ResumeContent />
             </AccordionItem>
 
-            <AccordionItem
-                title="About"
-                handleClick={() => handleAccordionClick('about')}
-                isOpen={openAccordion === 'about'}
-            >
-                <AboutContent />
-            </AccordionItem>
         </div>
     );
 };

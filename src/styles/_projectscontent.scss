@@ -1,8 +1,5 @@
 .projects-content {
-    .header-line {
-        border-top: 1px solid black;
-        width: 100%;
-    }
+
 
     .projects-title {
         display: none;
@@ -19,6 +16,7 @@
     }
 
     @include M {
+
         .projects-title {
             font-size: calc($fs-logo + .2rem);
         }

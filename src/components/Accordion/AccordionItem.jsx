@@ -29,16 +29,20 @@ const AccordionItem = ({ title, handleClick, isOpen, children }) => {
     return (
         <div>
             <div onClick={handleToggleChildren} className="projects-header container">
-                <div className="header-line line-1"></div>
+                <div className="header-line"></div>
                 <div className="projects-heading">
                     <div className="projects-title">{title}</div>
                     <div className="header-arrow ">
-                        <i className="fa-sharp fa-solid fa-angle-down"></i>
+                        <i className={`fa-sharp fa-solid ${showChildren ? 'fa-angle-up' : 'fa-angle-down'}`}></i>
                     </div>
+
+
                 </div>
-                <div className="header-line line-2"></div>
+                {title === "Resume" && !showChildren && <div className="resume-header-line"></div>}
             </div>
             {showChildren && <div>{children}</div>}
+            {title === "Resume" && showChildren && <div className="resume-header-line"></div>}
+
         </div>
     );
 };
