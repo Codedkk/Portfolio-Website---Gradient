@@ -1,4 +1,103 @@
-// .footer {
-//     background-image: "/asset/img/footer-ring.svg";
-//     max-width: 100%;
-// }
+.container {
+    margin-bottom: 0;
+}
+
+.footer {
+    padding: 10% 0 15% 0;
+    font-family: $ff-text;
+
+    .footer-content {
+
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        .footer-by {
+            font-weight: $fw-300;
+            letter-spacing: 1px;
+
+            .logo {
+                font-family: $ff-title;
+            }
+        }
+    }
+
+
+
+
+    .footer-nav {
+        display: none;
+    }
+
+    .footer-icons {
+        display: none;
+    }
+
+    @include S {
+
+        background-image: url(/asset/img/footer-ring.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+
+        margin-top: 20%;
+        min-height: 45rem;
+        font-size: $fs-nav-button;
+        text-transform: uppercase;
+
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+
+            .footer-nav {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+
+            }
+
+            .footer-icons {
+                display: flex;
+                gap: 1.4rem;
+                font-size: $fs-text-l ;
+            }
+        }
+
+    }
+
+    @include M {
+        min-height: 65rem;
+        font-size: $fs-text-l;
+    }
+
+    @include L {
+        min-height: 75rem;
+
+        .footer-content {
+
+            gap: 2rem;
+
+            .footer-nav {
+                gap: 2rem;
+            }
+
+            .footer-icons {
+                font-size: $fs-logo ;
+                gap: 2.5rem;
+            }
+        }
+    }
+}
