@@ -50,7 +50,7 @@ const ProjectsContent = () => {
                     brief={project.brief}
                     stacks={project.stacks}
                     stacksInfo={stacksInfo}
-                    isLast={index === projectInfo.length - 1}
+                    isLast={index === projectInfo.length}
                 />
             ))}
 

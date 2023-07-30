@@ -1,0 +1,186 @@
+.about-content {
+    font-family: $ff-text;
+    font-weight: $fw-200;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+
+
+    .about-line {
+        display: none;
+    }
+
+    .about-meet {
+        display: none;
+    }
+
+
+
+    .about-left {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+
+
+        .about-slogan {
+            font-size: $fs-text-s;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            line-height: 20px;
+        }
+
+        .about-image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .about-frame {
+                width: 40%;
+
+            }
+        }
+    }
+
+    .about-right {
+        font-weight: $fw-300;
+        font-size: $fs-text-l;
+
+        .about-skill {
+            margin-top: $margin-3;
+
+            .about-skillset {
+
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 20%;
+                margin-bottom: $margin-1;
+
+                & ul {
+
+                    // margin-block: 0;
+                    padding-left: 1rem;
+                }
+            }
+
+            .about-skill-title {
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                line-height: 20px;
+                font-weight: $fw-200;
+            }
+        }
+
+        .about-desc {
+            font-size: calc($fs-text-l - 0.1rem);
+            font-weight: $fw-300;
+
+        }
+
+    }
+
+
+    @include S {
+        display: flex;
+        flex-direction: row;
+        font-weight: $fw-300;
+        margin-bottom: $margin-7;
+
+        .about-container {
+
+            .about-top {
+
+
+                .about-line {
+                    display: block;
+                    border-top: 1px solid black;
+                    width: 100%;
+                }
+
+                .about-meet {
+                    display: block;
+                    font-size: $fs-title-L;
+                    margin: $margin-9 0 $margin-4 0;
+                }
+            }
+
+            .about-bottom {
+                display: flex;
+                align-items: center;
+
+                .about-left {
+                    flex: 4;
+
+                    .about-slogan {
+                        display: none;
+                    }
+
+                    .about-image {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+
+                        .about-frame {
+                            width: 80%;
+                        }
+                    }
+                }
+
+                .about-right {
+                    flex: 5;
+                }
+            }
+        }
+
+
+    }
+
+    @include L {
+        margin-top: $margin-4 ;
+        margin-bottom: $margin-10 ;
+
+        .about-container {
+            .about-top {
+                .about-meet {
+                    font-size: calc($fs-title-L + 1.4rem);
+                    font-weight: $fw-400;
+                    margin: $margin-7 0 $margin-5 0;
+                }
+
+                .about-line {
+                    display: none;
+                }
+
+            }
+        }
+
+        .about-bottom {
+            // gap: 1rem;
+
+            .about-left {
+                gap: 2rem;
+            }
+
+            .about-right {
+                font-size: $fs-logo;
+                padding-left: 1rem;
+
+                .about-skill {
+                    .about-skillset {
+                        gap: 30%;
+                    }
+                }
+
+                .about-desc {
+                    font-size: $fs-text-l;
+
+                }
+            }
+
+        }
+
+    }
+
+}
