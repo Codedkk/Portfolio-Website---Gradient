@@ -5,7 +5,6 @@ const Resume = ({ handleClick, openAccordion, children }) => {
         <div>
 
             <div onClick={handleClick}>
-                Some Content
             </div>
             {openAccordion && <div>{children}</div>}
         </div>

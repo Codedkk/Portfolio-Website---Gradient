@@ -1,0 +1,56 @@
+.resume-content {
+    margin: $margin-6;
+    font-family: $ff-title;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: $margin-5;
+
+    .resume-title {
+        font-size: 2.5rem;
+        word-spacing: 10px;
+    }
+
+    .button-resume {
+        width: 13rem;
+    }
+
+
+    @include S {
+
+        margin-top: $margin-12;
+        margin-bottom: $margin-12;
+
+        .resume-title {
+            font-size: $fs-title-L;
+            word-spacing: 10px;
+        }
+
+        .button-resume {
+            font-size: $fs-logo;
+            width: 18rem;
+            height: 3.5rem;
+        }
+
+    }
+
+    @include L {
+        margin-top: $margin-13;
+        margin-bottom: $margin-13;
+        gap: $margin-9;
+
+        .resume-title {
+            font-size: calc($fs-title-L + 2rem);
+            word-spacing: 15px;
+        }
+
+
+        .button-resume {
+            font-size: $fs-title;
+            width: 20rem;
+            height: 4.5rem;
+        }
+
+
+    }
+}
