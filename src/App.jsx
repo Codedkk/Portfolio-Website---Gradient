@@ -4,13 +4,15 @@ import Home from "./components/Home/Home";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Project from "./pages/Project";
-import "./styles/main.scss"
+import "./styles/main.scss";
+import gsap from 'gsap';
 
 
 const Layout = () => {
+  let timeline = gsap.timeline();
   return (
     <div className="app">
-      <Navbar />
+      <Navbar timeline={timeline} />
       <Outlet />
       <Footer />
     </div>

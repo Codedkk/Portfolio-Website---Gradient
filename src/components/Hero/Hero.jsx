@@ -1,9 +1,42 @@
-import React from 'react'
+import React, { useState, useRef, useEffect } from 'react';
+import gsap from 'gsap';
 
-const Hero = () => {
+
+const Hero = ({ }) => {
+    let timeline = gsap.timeline();
+    let hero_text = useRef(null);
+    let button_hero = useRef(null);
+    let hero_social = useRef(null);
+
+
+    useEffect(() => {
+        timeline.from(hero_text, {
+            delay: 2,
+            duration: 2.5,
+            opacity: 0,
+            y: 200
+        }, "-=3")
+        timeline.from(button_hero, {
+
+            duration: .8,
+            opacity: 0,
+            y: 100
+        }, "-=.5")
+        timeline.from(hero_social, {
+
+            duration: .8,
+            opacity: 0,
+            y: 100
+        }, "-=.5")
+
+    }, [])
+
+
+
+
     return (
         <div className="hero">
-            <div className="hero_text">
+            <div className="hero_text" ref={el => hero_text = el} >
                 <span >Fili is &nbsp;
                     <span>a&nbsp;
                         <div className="hero_text-first">
@@ -34,8 +67,8 @@ const Hero = () => {
                 </span> */}
 
             </div>
-            <button className="button button-hero">✧ Say HI! ✧</button>
-            <div className="hero_social">
+            <button className="button button-hero" ref={el => button_hero = el}>✧ Say HI! ✧</button>
+            <div className="hero_social" ref={el => hero_social = el}>
                 <i className="fa-brands fa-github"></i>
                 <i className="fa-brands fa-linkedin-in"></i>
                 <i className="fa-regular fa-envelope"></i>

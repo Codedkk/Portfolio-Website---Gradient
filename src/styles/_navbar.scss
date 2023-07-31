@@ -50,6 +50,8 @@ body {
     color: $clr-text;
     // max-width: 100%;
 
+
+
     .menu {
         .ham-menu-close {
             font-size: $fs-text-s;
@@ -59,14 +61,14 @@ body {
 
     .logo {
         font-size: $fs-logo;
+        opacity: 1;
     }
 
 
     .nav_right {
         display: none;
+        opacity: 1;
     }
-
-
 
 
     @include S {

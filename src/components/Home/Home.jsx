@@ -3,10 +3,10 @@ import Hero from "../Hero/Hero";
 import Accordion from '../Accordion/Accordion';
 
 
-
 const Home = () => {
+
     return (
-        <div className='home'>
+        <div className='home' >
             <Hero />
             <Accordion />
         </div>
