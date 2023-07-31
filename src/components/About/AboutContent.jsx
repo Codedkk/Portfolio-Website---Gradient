@@ -1,10 +1,39 @@
-import React from 'react'
+import React, { useState, useRef, useEffect, useLayoutEffect } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const AboutContent = () => {
+
+    let about_content = useRef(null);
+
+    useLayoutEffect(() => {
+        const ctx = gsap.context((self) => {
+            const about_contents = self.selector('div');
+            about_contents.forEach((about_content) => {
+                gsap.from(about_content, {
+                    delay: 2,
+                    duration: 5,
+                    x: "40%",
+                    scrollTrigger: {
+                        trigger: about_content,
+                        scrub: true,
+                        start: 'bottom bottom',
+                        end: 'top 0%',
+
+                    },
+                });
+
+            });
+        }, about_content); // <- Scope!
+        return () => ctx.revert(); // <- Cleanup!
+    }, []);
+
     return (
         <div>
 
-            <div className="about-content container">
+            <div className="about-content container" ref={el => about_content = el}>
 
                 <div className="about-container">
 
