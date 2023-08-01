@@ -5,13 +5,14 @@
     .header-line {
         border-top: 1px solid black;
         width: 100%;
+
     }
 
     .card-content {
         display: flex;
         flex-direction: column;
         gap: $margin-3;
-        margin: $margin-9 0 $margin-9 0;
+        padding: $margin-6 0 $margin-6 0;
 
 
         .card-right {
@@ -79,10 +80,13 @@
 
 
 
+
         .card-content {
             font-size: $fs-text-l;
             display: flex;
             flex-direction: column-reverse;
+
+
 
             .card-right {
                 display: flex;

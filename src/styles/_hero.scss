@@ -7,12 +7,12 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding-top: $padding-1-1;
-    // gap: 2.4rem;
-    margin-bottom: $margin-7;
+    padding-top: $padding-1;
+    gap: .8rem;
+    padding-bottom: $margin-7;
 
     .hero_text {
-        // margin-top: 1rem;
+
         padding-inline: 35px;
         width: 100%;
         display: inline-block;
@@ -65,11 +65,12 @@
         gap: 2rem;
         font-size: $fs-social;
         color: $clr-text;
-        margin-top: $margin-1;
+
     }
 
-    //might change 
     @include XS {
+        margin-bottom: $margin-9;
+
         .hero_text {
             margin-top: $margin-3 ;
         }
@@ -80,9 +81,12 @@
     }
 
     @include S {
+        gap: $margin-4;
+        padding-bottom: $margin-1;
+
         .hero_text {
-            font-size: $fs-title-s;
-            line-height: 45px;
+            font-size: $fs-title-s-2;
+            line-height: 60px;
         }
     }
 

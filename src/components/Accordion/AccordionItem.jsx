@@ -29,7 +29,7 @@ const AccordionItem = ({ title, handleClick, isOpen, children }) => {
     return (
         <div>
             <div onClick={handleToggleChildren} className="projects-header container">
-                <div className="header-line"></div>
+                <div className="accor-line"></div>
                 <div className="projects-heading">
                     <div className="projects-title">{title}</div>
                     <div className="header-arrow ">

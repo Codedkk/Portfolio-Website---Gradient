@@ -13,14 +13,19 @@ const Footer = () => {
             const footers = self.selector('div');
             footers.forEach((footer) => {
                 gsap.from(footer, {
-                    delay: -2,
-                    duration: 1,
-                    x: "-30%",
+                    delay: 10000000,
+                    duration: 90,
+                    x: -100,
                     scrollTrigger: {
                         trigger: footer,
-                        scrub: true,
-                        start: 'bottom bottom',
+                        scrub: .005,
+                        start: 'top 150%',
                         end: 'top 0%',
+                        toggleActions: "none pause none none",
+                        markers: {
+                            startColor: "black",
+                            endColor: "pink",
+                        }
 
                     },
                 });

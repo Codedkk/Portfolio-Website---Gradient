@@ -13,21 +13,25 @@ const AboutContent = () => {
             const about_contents = self.selector('div');
             about_contents.forEach((about_content) => {
                 gsap.from(about_content, {
-                    delay: 2,
-                    duration: 5,
-                    x: "40%",
+                    delay: 10000000,
+                    duration: 900,
+                    x: "30%",
                     scrollTrigger: {
                         trigger: about_content,
-                        scrub: true,
-                        start: 'bottom bottom',
-                        end: 'top 0%',
-
+                        scrub: .005,
+                        start: 'top 300%',
+                        end: 'bottom center',
+                        toggleActions: "none pause none none",
+                        markers: {
+                            startColor: "purple",
+                            endColor: "blue",
+                        }
                     },
                 });
 
             });
-        }, about_content); // <- Scope!
-        return () => ctx.revert(); // <- Cleanup!
+        }, about_content);
+        return () => ctx.revert();
     }, []);
 
     return (
@@ -38,7 +42,7 @@ const AboutContent = () => {
                 <div className="about-container">
 
                     <div className="about-top">
-                        <div className="about-line"></div>
+
                         <div className="about-meet">Meet Kola</div>
                     </div>
                     <div className="about-bottom">

@@ -9,10 +9,10 @@ import gsap from 'gsap';
 
 
 const Layout = () => {
-  let timeline = gsap.timeline();
+  // let timeline = gsap.timeline();
   return (
     <div className="app">
-      <Navbar timeline={timeline} />
+      <Navbar />
       <Outlet />
       <Footer />
     </div>

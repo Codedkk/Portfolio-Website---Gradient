@@ -10,59 +10,38 @@ gsap.registerPlugin(ScrollTrigger);
 
 const ProjectsCard = ({ projectTitle, thumbnail, brief, stacks, stacksInfo, isLast }) => {
 
+    var timeline = gsap.timeline();
     let card_content = useRef();
+
 
     useLayoutEffect(() => {
         const ctx = gsap.context((self) => {
             const card_sections = self.selector('div');
             card_sections.forEach((card_section) => {
-                gsap.from(card_section, {
-                    delay: 0.5,
-                    duration: 1,
-                    x: -50,
+                const animation = gsap.from(card_section, {
+                    delay: 2,
+                    // duration: 900,
+                    x: -40,
                     scrollTrigger: {
                         trigger: card_section,
                         scrub: true,
-                        start: 'bottom bottom',
-                        end: 'top 0%',
-                        ease: "elastic.out(3, 0.5)"
+                        start: 'top 110%',
+                        end: 'top 30%',
+                        toggleActions: "none pause none none",
+                        markers: true
                     },
                 });
-
             });
-        }, card_content); // <- Scope!
-        return () => ctx.revert(); // <- Cleanup!
+        }, card_content);
+        return () => ctx.revert();
     }, []);
 
-    // gsap.from(card_section, {
-    //     x: 150,
-    //     scrollTrigger: {
-    //         trigger: card_section,
-    //         scrub: true,
-    //         start: 'bottom bottom',
-    //         end: 'top 0%',
 
-    //         // pin: true,
-
-
-
-    //     },
-    // });
-
-    // let timeline = gsap.timeline();
-    // let card_right = useRef(null);
-
-    // useEffect(() => {
-    //     timeline.from(card_right, {
-    //         delay: 1,
-    //         duration: .5,
-    //         opacity: 0,
-    //         y: 100
-    //     })
-
-    // }, [])
-
-
+    // timeline.to(card_content, { duration: 9 },)
+    //     .addPause(100)
+    //     .to(card_content, { duration: 9 }, + 5)
+    //     .addPause(100000000000000)
+    // .to(card_content, { duration: 9 });
 
     return (
         <div className="projects-card ">

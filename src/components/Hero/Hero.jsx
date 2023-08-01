@@ -12,12 +12,11 @@ const Hero = ({ }) => {
     useEffect(() => {
         timeline.from(hero_text, {
             delay: 2,
-            duration: 2.5,
+            duration: 2,
             opacity: 0,
             y: 200
-        }, "-=3")
+        }, "-=1")
         timeline.from(button_hero, {
-
             duration: .8,
             opacity: 0,
             y: 100

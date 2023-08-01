@@ -13,14 +13,19 @@ const ResumeContent = () => {
             const resume_contents = self.selector('div');
             resume_contents.forEach((resume_content) => {
                 gsap.from(resume_content, {
-                    delay: -2,
-                    duration: 1,
-                    x: "-50%",
+                    delay: 2,
+                    // duration: 90,
+                    x: -100,
                     scrollTrigger: {
                         trigger: resume_content,
-                        scrub: true,
-                        start: 'bottom bottom',
+                        scrub: .005,
+                        start: 'top 150%',
                         end: 'top 0%',
+                        toggleActions: "none pause none none",
+                        markers: {
+                            startColor: "yellow",
+                            endColor: "pink",
+                        }
 
                     },
                 });

@@ -1,12 +1,11 @@
 .projects-content {
 
-
     .projects-title {
         display: none;
     }
 
     @include S {
-        margin-top: 25%;
+        margin-top: 17%;
 
         .projects-title {
             display: block;
