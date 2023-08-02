@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import gsap from 'gsap';
 import Mailmodal from "./Mailmodal"
+import Shuffler from './Shuffler';
 
 
 const Hero = ({ }) => {
@@ -51,7 +52,7 @@ const Hero = ({ }) => {
                     <span>
                         <div className="hero_text-second">
                             <span >✎︎ </span>
-                            <span> fusing usability with <span className="hero_text-style">style</span></span>
+                            <span> fusing <Shuffler /> with <span className="hero_text-style">style</span></span>
                         </div>&nbsp;</span>
                     {/* <span>with
                         <div className="hero_text-third">
