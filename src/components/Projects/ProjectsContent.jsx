@@ -4,26 +4,26 @@ import ProjectsCard from './ProjectsCard';
 const projectInfo = [
     {
         projectTitle: "fashion ecommerce website",
-        thumbnail: "public/asset/img/ProjectsContent/Free_MacBook_Pro_1.jpeg",
+        images: ["public/asset/img/ProjectsContent/Free_MacBook_Pro_1.jpeg", "public/asset/img/ProjectsContent/Free_Iphone_13_Pro_Mockup_1.jpeg"],
         brief: ["Fully responsive with user-centricity Lorem ipsum dolor sit amet conser adipisicing elit. Reiciendis, non.", "Combined with API real life data fetching"],
         stacks: ["react", "sass", "gsap"]
     },
     {
         projectTitle: "Real World TODO App",
-        thumbnail: "public/asset/img/ProjectsContent/Free_Iphone_13_Pro_Mockup_1.jpeg",
+        images: ["public/asset/img/ProjectsContent/Free_MacBook_Pro_1.jpeg", "public/asset/img/ProjectsContent/Free_Iphone_13_Pro_Mockup_1.jpeg"],
         brief: ["Fully responsive with user-centricity", "Combined with API real life data fetching"],
         stacks: ["react", "sass", "gsap"]
     },
     {
         projectTitle: "hallow",
-        thumbnail: "public/asset/img/ProjectsContent/Free_MacBook_Pro_1.jpeg",
+        images: ["public/asset/img/ProjectsContent/Free_MacBook_Pro_1.jpeg", "public/asset/img/ProjectsContent/Free_Iphone_13_Pro_Mockup_1.jpeg"],
         brief: ["Fully responsive with user-centricity",
             "Combined with API real life data fetching",],
         stacks: ["react", "sass", "js"]
     },
     {
         projectTitle: "influencer portfolio",
-        thumbnail: "public/asset/img/ProjectsContent/Free_iPhone_12_Mockup_3.jpeg",
+        images: ["public/asset/img/ProjectsContent/Free_MacBook_Pro_1.jpeg", "public/asset/img/ProjectsContent/Free_Iphone_13_Pro_Mockup_1.jpeg"],
         brief: ["Fully responsive with user-centricity",
             "Combined with API real life data fetching",],
         stacks: ["react", "sass", "js"]
@@ -46,11 +46,13 @@ const ProjectsContent = () => {
                 <ProjectsCard
                     key={index}
                     projectTitle={project.projectTitle}
-                    thumbnail={project.thumbnail}
+                    images={project.images}
                     brief={project.brief}
                     stacks={project.stacks}
                     stacksInfo={stacksInfo}
                     isLast={index === (projectInfo.length + 1)}
+
+
                 />
             ))}
 

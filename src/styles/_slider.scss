@@ -1,0 +1,42 @@
+.slider {
+    // max-height: 100%;
+    // max-width: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    .slider-container {
+        max-width: 100%;
+        max-height: 100%;
+        display: flex;
+        transition: all 1s ease;
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .icons {
+        width: fit-content;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 50px;
+        gap: 6rem;
+        margin: auto;
+
+        .icon {
+            width: 10px;
+            height: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+    }
+}

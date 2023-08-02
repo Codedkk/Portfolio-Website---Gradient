@@ -1,14 +1,14 @@
 // import React from 'react';
 import { useEffect, useRef, useState } from 'react';
 import React, { useLayoutEffect } from 'react';
-
+import Slider from "./Slider"
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
 
-const ProjectsCard = ({ projectTitle, thumbnail, brief, stacks, stacksInfo, isLast }) => {
+const ProjectsCard = ({ projectTitle, images, brief, stacks, stacksInfo, isLast }) => {
 
     var timeline = gsap.timeline();
     let card_content = useRef();
@@ -75,7 +75,9 @@ const ProjectsCard = ({ projectTitle, thumbnail, brief, stacks, stacksInfo, isLa
 
                 <div className="card-left">
                     <div className="project-thumbnail">
-                        <img src={thumbnail} alt="" />
+                        {/* <img src={thumbnail} alt="" /> */}
+
+                        <Slider images={images} />
                     </div>
                 </div>
 
