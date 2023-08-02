@@ -15,7 +15,7 @@ const AboutContent = () => {
                 gsap.from(about_content, {
                     delay: 10000000,
                     duration: 900,
-                    x: "30%",
+                    x: "80%",
                     scrollTrigger: {
                         trigger: about_content,
                         scrub: .005,

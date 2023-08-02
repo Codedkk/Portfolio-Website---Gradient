@@ -22,6 +22,11 @@ const Navbar = ({ }) => {
     //     })
     // }, [])
 
+    //TODO
+    const handleButtonDownload = () => {
+        window.location.href = 'https://example.com/path/to/pdf';
+    };
+
     return (
         <nav className="navbar container">
             <div className="nav_left">
@@ -33,7 +38,7 @@ const Navbar = ({ }) => {
                     <Link to="/project" className="link">PROJECTS</Link>
                     <Link to="/project" className="link">RESUME</Link>
                     <Link to="/project" className="link">ABOUT</Link>
-                    <button className="button button-nav">WORK WITH ME</button>
+                    <button className="button button-nav" onClick={handleButtonDownload}>WORK WITH ME</button>
                 </div>
             </div>
 

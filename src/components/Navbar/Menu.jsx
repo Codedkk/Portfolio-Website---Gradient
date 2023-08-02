@@ -2,7 +2,11 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const Menu = () => {
+    const handleButtonMail = () => {
+        window.open('mailto:recipient@example.com');
+    };
     const [navOpen, setNavOpen] = useState(false)
+
     return (
         <div className="menu">
             <i className="fa-solid fa-ellipsis " onClick={() => setNavOpen(!navOpen)}></i>
@@ -12,7 +16,7 @@ const Menu = () => {
                     <Link to="/project" className="link">PROJECTS</Link>
                     <Link to="/project" className="link">RESUME</Link>
                     <Link to="/project" className="link">ABOUT</Link>
-                    <button className="button button-ham ">✧ Say HI! ✧</button>
+                    <button className="button button-ham " onClick={handleButtonMail}>✧ Say HI! ✧</button>
                 </div>}
 
         </div>

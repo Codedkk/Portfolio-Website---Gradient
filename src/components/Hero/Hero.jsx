@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import gsap from 'gsap';
+import Mailmodal from "./Mailmodal"
 
 
 const Hero = ({ }) => {
@@ -7,6 +8,8 @@ const Hero = ({ }) => {
     let hero_text = useRef(null);
     let button_hero = useRef(null);
     let hero_social = useRef(null);
+
+    const [modalOpen, setModalOpen] = useState(false);
 
 
     useEffect(() => {
@@ -30,8 +33,11 @@ const Hero = ({ }) => {
 
     }, [])
 
-
-
+    // onClick={handleButtonMail}
+    //TODO
+    const handleButtonMail = () => {
+        window.open('mailto:recipient@example.com');
+    };
 
     return (
         <div className="hero">
@@ -66,11 +72,22 @@ const Hero = ({ }) => {
                 </span> */}
 
             </div>
-            <button className="button button-hero" ref={el => button_hero = el}>✧ Say HI! ✧</button>
+            <button className="button button-hero" ref={el => button_hero = el} onClick={() => {
+                setModalOpen(true);
+            }} >✧ Say HI! ✧</button>
+            {modalOpen && <Mailmodal setOpenModal={setModalOpen} />}
             <div className="hero_social" ref={el => hero_social = el}>
-                <i className="fa-brands fa-github"></i>
-                <i className="fa-brands fa-linkedin-in"></i>
-                <i className="fa-regular fa-envelope"></i>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hero_social_icon">
+                    <i className="fab fa-github"></i>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hero_social_icon">
+                    <i className="fa-brands fa-linkedin-in"></i>
+                </a>
+                <div className="hero_social_icon" onClick={handleButtonMail}>
+                    <i className="fa-regular fa-envelope"></i>
+                </div>
+                {/* TODO */}
+
 
 
             </div>

@@ -9,9 +9,10 @@
     text-align: center;
     padding-top: $padding-1;
     gap: .8rem;
-    padding-bottom: $margin-7;
+    padding-bottom: $margin-6;
 
     .hero_text {
+        padding-top: $margin-2;
 
         padding-inline: 35px;
         width: 100%;
@@ -66,6 +67,11 @@
         font-size: $fs-social;
         color: $clr-text;
 
+    }
+
+    .hero_social_icon:visited {
+        color: $clr-text;
+        text-decoration-style: none;
     }
 
     @include XS {

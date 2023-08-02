@@ -4,7 +4,7 @@ const AccordionItem = ({ title, handleClick, isOpen, children }) => {
     const [showChildren, setShowChildren] = useState(false);
 
     const handleToggleChildren = () => {
-        setShowChildren(!showChildren);
+        handleClick();
     };
 
     useEffect(() => {
@@ -41,7 +41,7 @@ const AccordionItem = ({ title, handleClick, isOpen, children }) => {
                 {title === "Resume" && !showChildren && <div className="resume-header-line"></div>}
             </div>
             {showChildren && <div>{children}</div>}
-            {title === "Resume" && showChildren && <div className="resume-header-line"></div>}
+            {title === "Resume" && showChildren && <div className="resume-header-line-open"></div>}
 
         </div>
     );

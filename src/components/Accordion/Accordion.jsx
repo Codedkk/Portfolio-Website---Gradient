@@ -10,11 +10,7 @@ const Accordion = () => {
     const [openAccordion, setOpenAccordion] = useState(null);
 
     const handleAccordionClick = (section) => {
-        if (openAccordion === section) {
-            setOpenAccordion(null);
-        } else {
-            setOpenAccordion(section);
-        }
+        setOpenAccordion(section === openAccordion ? null : section);
     };
 
     return (

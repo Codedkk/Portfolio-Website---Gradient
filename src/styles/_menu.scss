@@ -1,6 +1,7 @@
 .menu {
     font-family: $ff-text;
     font-size: $fs-text-s;
+    z-index: 9999;
 
     .ham-menu {
         max-width: 100%;

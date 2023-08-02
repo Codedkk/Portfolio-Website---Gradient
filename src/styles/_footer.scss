@@ -3,9 +3,10 @@
 }
 
 .footer {
-    padding: 10% 0 15% 15%;
+    padding: 10% 0 10% 0%;
     font-family: $ff-text;
     max-width: 100%;
+
 
     .footer-content {
 
@@ -16,7 +17,7 @@
 
 
         .footer-by {
-            max-width: 100%;
+            padding-left: 23%;
             font-weight: $fw-300;
             letter-spacing: 1px;
 
@@ -78,6 +79,10 @@
                 gap: 1.4rem;
                 font-size: $fs-text-l ;
             }
+
+            .footer-by {
+                padding-left: 0;
+            }
         }
 
     }
@@ -88,7 +93,7 @@
     }
 
     @include L {
-        min-height: 67rem;
+        min-height: 68rem;
 
         .footer-content {
 

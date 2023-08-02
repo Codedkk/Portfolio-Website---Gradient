@@ -21,12 +21,12 @@ const ProjectsCard = ({ projectTitle, thumbnail, brief, stacks, stacksInfo, isLa
                 const animation = gsap.from(card_section, {
                     delay: 2,
                     // duration: 900,
-                    x: -40,
+                    x: -50,
                     scrollTrigger: {
                         trigger: card_section,
                         scrub: true,
-                        start: 'top 110%',
-                        end: 'top 30%',
+                        start: 'top 100%',
+                        end: 'top 20%',
                         toggleActions: "none pause none none",
                         markers: true
                     },

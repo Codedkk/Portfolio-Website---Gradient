@@ -15,12 +15,12 @@ const ResumeContent = () => {
                 gsap.from(resume_content, {
                     delay: 2,
                     // duration: 90,
-                    x: -100,
+                    x: -400,
                     scrollTrigger: {
                         trigger: resume_content,
                         scrub: .005,
                         start: 'top 150%',
-                        end: 'top 0%',
+                        end: 'top 50%',
                         toggleActions: "none pause none none",
                         markers: {
                             startColor: "yellow",
@@ -36,7 +36,7 @@ const ResumeContent = () => {
     }, []);
 
     return (
-        <div className='resume-content container' ref={el => resume_content = el}>
+        <div className='resume-content ' ref={el => resume_content = el}>
             <div>
                 <div className="resume-title">WORK WITH ME</div>
 
