@@ -65,6 +65,13 @@
                     font-weight: $fw-400;
                 }
             }
+
+            .card-desc {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+
+            }
         }
 
         .project-thumbnail {
@@ -115,6 +122,10 @@
 
                 }
 
+                .card-desc {
+
+                    margin-top: 0rem;
+                }
             }
 
         }
@@ -172,6 +183,7 @@
             font-size: $fs-text-l;
             display: flex;
             flex-direction: row;
+            gap: 4rem;
 
             .card-right {
                 flex: 2;

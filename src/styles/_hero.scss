@@ -58,34 +58,25 @@
         background: transparent;
         width: 80%;
         margin: $margin-1 0 $margin-3;
-
-        // @include XS {
-        //     width: 50%;
-        // }
     }
 
-    .hero_social {
-        display: flex;
-        gap: 2rem;
-        font-size: $fs-social;
-        color: $clr-text;
 
-    }
-
-    .hero_social_icon:visited {
-        color: $clr-text;
-        text-decoration-style: none;
-    }
 
     @include XS {
         margin-bottom: $margin-9;
+        // gap: rem;
 
         .hero_text {
             margin-top: $margin-3 ;
+            // margin-bottom: $margin- ;
         }
 
         .button-hero {
             width: 13rem;
+        }
+
+        .hero_social {
+            display: none;
         }
     }
 
@@ -117,6 +108,7 @@
         .hero_text {
             font-size: $fs-title-L;
             line-height: 80px;
+            margin-bottom: $margin-5;
 
             .hero_text-second {
                 .hero_text-style {

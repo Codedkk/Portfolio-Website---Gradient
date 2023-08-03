@@ -22,10 +22,10 @@ const AboutContent = () => {
                         start: 'top 300%',
                         end: 'bottom center',
                         toggleActions: "none pause none none",
-                        markers: {
-                            startColor: "purple",
-                            endColor: "blue",
-                        }
+                        // markers: {
+                        //     startColor: "purple",
+                        //     endColor: "blue",
+                        // }
                     },
                 });
 
@@ -33,6 +33,12 @@ const AboutContent = () => {
         }, about_content);
         return () => ctx.revert();
     }, []);
+
+    //TODO
+    const handleButtonMail = () => {
+        window.open('mailto:recipient@example.com');
+    };
+
 
     return (
         <div>
@@ -80,9 +86,23 @@ const AboutContent = () => {
                                     </ul>
                                 </div>
                             </div>
+
                             <div className="about-desc">
                                 Hi, I'm a business-minded designer with 3+ ng immersive digital experiences that e modern companies and boost their e modern companies and boost their
                                 brands. Let's collaborate to e modern companies and boost their brands.
+                            </div>
+                            <div className="about_social" >
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="about_social_icon">
+                                    <i className="fab fa-github"></i>
+                                </a>
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="about_social_icon" onClick={handleButtonMail}>
+                                    <i className="fa-brands fa-linkedin-in"></i>
+                                </a>
+
+                                <div className="about_social_icon" >
+                                    <i className="fa-regular fa-envelope"></i>
+                                </div>
+                                {/* TODO */}
                             </div>
                         </div>
 

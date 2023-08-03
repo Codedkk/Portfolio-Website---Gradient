@@ -8,7 +8,7 @@ const Hero = ({ }) => {
     let timeline = gsap.timeline();
     let hero_text = useRef(null);
     let button_hero = useRef(null);
-    let hero_social = useRef(null);
+    // let hero_social = useRef(null);
 
     const [modalOpen, setModalOpen] = useState(false);
 
@@ -25,20 +25,16 @@ const Hero = ({ }) => {
             opacity: 0,
             y: 100
         }, "-=.5")
-        timeline.from(hero_social, {
+        // timeline.from(hero_social, {
 
-            duration: .8,
-            opacity: 0,
-            y: 100
-        }, "-=.5")
+        //     duration: .8,
+        //     opacity: 0,
+        //     y: 100
+        // }, "-=.5")
 
     }, [])
 
-    // onClick={handleButtonMail}
-    //TODO
-    const handleButtonMail = () => {
-        window.open('mailto:recipient@example.com');
-    };
+
 
     return (
         <div className="hero">
@@ -77,21 +73,7 @@ const Hero = ({ }) => {
                 setModalOpen(true);
             }} >✧ Say HI! ✧</button>
             {modalOpen && <Mailmodal setOpenModal={setModalOpen} />}
-            <div className="hero_social" ref={el => hero_social = el}>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hero_social_icon">
-                    <i className="fab fa-github"></i>
-                </a>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hero_social_icon">
-                    <i className="fa-brands fa-linkedin-in"></i>
-                </a>
-                <div className="hero_social_icon" onClick={handleButtonMail}>
-                    <i className="fa-regular fa-envelope"></i>
-                </div>
-                {/* TODO */}
 
-
-
-            </div>
         </div>
     )
 }

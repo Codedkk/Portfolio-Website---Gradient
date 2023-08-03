@@ -22,10 +22,10 @@ const ResumeContent = () => {
                         start: 'top 150%',
                         end: 'top 50%',
                         toggleActions: "none pause none none",
-                        markers: {
-                            startColor: "yellow",
-                            endColor: "pink",
-                        }
+                        // markers: {
+                        //     startColor: "yellow",
+                        //     endColor: "pink",
+                        // }
 
                     },
                 });

@@ -28,7 +28,7 @@ const ProjectsCard = ({ projectTitle, images, brief, stacks, stacksInfo, isLast 
                         start: 'top 100%',
                         end: 'top 20%',
                         toggleActions: "none pause none none",
-                        markers: true
+                        // markers: true
                     },
                 });
             });

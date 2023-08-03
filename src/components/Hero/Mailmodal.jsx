@@ -1,6 +1,10 @@
 import React from "react";
 
 function Modal({ setOpenModal }) {
+    //TODO
+    const handleButtonMail = () => {
+        window.open('mailto:recipient@example.com');
+    };
     return (
         <div className="modalBackground">
             <div className="modalContainer">
@@ -14,12 +18,27 @@ function Modal({ setOpenModal }) {
                     </button>
                 </div>
                 <div className="title">
-                    <h1>Write to me at</h1>
+                    <h1>Let's connect at</h1>
                 </div>
                 {/* TODO */}
                 <div className="body">
                     <p>developementk@gmail.com</p>
+
+                    <div className="about_social" >
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="about_social_icon">
+                            <i className="fab fa-github"></i>
+                        </a>
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="about_social_icon" onClick={handleButtonMail}>
+                            <i className="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                        <div className="about_social_icon" >
+                            <i className="fa-regular fa-envelope"></i>
+                        </div>
+                        {/* TODO */}
+                    </div>
                 </div>
+
             </div>
         </div>
     );

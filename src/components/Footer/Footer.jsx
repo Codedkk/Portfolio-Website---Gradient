@@ -22,10 +22,10 @@ const Footer = () => {
                         start: 'top 150%',
                         end: 'top 0%',
                         toggleActions: "none pause none none",
-                        markers: {
-                            startColor: "black",
-                            endColor: "pink",
-                        }
+                        // markers: {
+                        //     startColor: "black",
+                        //     endColor: "pink",
+                        // }
 
                     },
                 });
@@ -51,7 +51,7 @@ const Footer = () => {
                     </div>
 
                     <div className="footer-by">
-                        Developed By <span className="logo">KIKIDENG</span>
+                        Developed By <span className="logo">Jellyfish</span>
                     </div>
                 </div>
             </div>
