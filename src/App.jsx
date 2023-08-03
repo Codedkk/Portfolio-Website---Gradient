@@ -1,4 +1,3 @@
-// import { Children } from "react";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Home from "./components/Home/Home";
 import Navbar from "./components/Navbar/Navbar";
@@ -8,7 +7,6 @@ import gsap from 'gsap';
 
 
 const Layout = () => {
-  // let timeline = gsap.timeline();
   return (
     <div className="app">
       <Navbar />

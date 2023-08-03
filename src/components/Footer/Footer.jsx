@@ -36,7 +36,7 @@ const Footer = () => {
     }, []);
     return (
         <>
-            <div className="footer container" ref={el => footer = el}>
+            <footer className="footer container" ref={el => footer = el}>
                 <div className="footer-content">
                     <div className="footer-nav">
                         <div>Projects</div>
@@ -54,7 +54,7 @@ const Footer = () => {
                         Developed By <span className="logo">Jellyfish</span>
                     </div>
                 </div>
-            </div>
+            </footer>
         </>
 
 

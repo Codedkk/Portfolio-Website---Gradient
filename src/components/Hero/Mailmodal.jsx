@@ -6,16 +6,12 @@ function Modal({ setOpenModal }) {
         window.open('mailto:recipient@example.com');
     };
     return (
-        <div className="modalBackground">
+        <section className="modalBackground">
             <div className="modalContainer">
                 <div className="titleCloseBtn">
-                    <button
-                        onClick={() => {
-                            setOpenModal(false);
-                        }}
-                    >
-                        X
-                    </button>
+                    <i className="fas fa-times" onClick={() => {
+                        setOpenModal(false);
+                    }}> </i>
                 </div>
                 <div className="title">
                     <h1>Let's connect at</h1>
@@ -33,15 +29,15 @@ function Modal({ setOpenModal }) {
 
                         </a>
 
-                        <div className="about_social_icon" >
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="about_social_icon">
                             <i className="fa-brands fa-linkedin-in"></i>
-                        </div>
+                        </a>
                         {/* TODO */}
                     </div>
                 </div>
 
             </div>
-        </div>
+        </section>
     );
 }
 

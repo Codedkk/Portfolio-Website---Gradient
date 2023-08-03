@@ -75,8 +75,6 @@ const ProjectsCard = ({ projectTitle, images, brief, stacks, stacksInfo, isLast 
 
                 <div className="card-left">
                     <div className="project-thumbnail">
-                        {/* <img src={thumbnail} alt="" /> */}
-
                         <Slider images={images} />
                     </div>
                 </div>

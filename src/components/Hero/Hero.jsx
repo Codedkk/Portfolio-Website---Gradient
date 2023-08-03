@@ -37,7 +37,7 @@ const Hero = ({ }) => {
 
 
     return (
-        <div className="hero">
+        <section className="hero">
             <div className="hero_text" ref={el => hero_text = el} >
                 <span >Fili is &nbsp;
                     <span>a&nbsp;
@@ -74,7 +74,7 @@ const Hero = ({ }) => {
             }} >✧ Say HI! ✧</button>
             {modalOpen && <Mailmodal setOpenModal={setModalOpen} />}
 
-        </div>
+        </section>
     )
 }
 

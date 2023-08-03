@@ -41,8 +41,7 @@ const AboutContent = () => {
 
 
     return (
-        <div>
-
+        <section>
             <div className="about-content container" id="about" ref={el => about_content = el}>
 
                 <div className="about-container">
@@ -60,7 +59,7 @@ const AboutContent = () => {
                             </div>
 
                             <div className="about-image">
-                                <img src="asset/img/about-frame.svg" alt="" className="about-frame" />
+                                <img src="asset/img/about-frame.svg" alt="portrait" className="about-frame" />
                             </div>
                         </div>
                         <div className="about-right">
@@ -96,12 +95,12 @@ const AboutContent = () => {
                                     <i className="fab fa-github"></i>
                                 </a>
                                 <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="about_social_icon" onClick={handleButtonMail}>
+                                    <i className="fa-regular fa-envelope"></i>
+
+                                </a>
+                                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="about_social_icon">
                                     <i className="fa-brands fa-linkedin-in"></i>
                                 </a>
-
-                                <div className="about_social_icon" >
-                                    <i className="fa-regular fa-envelope"></i>
-                                </div>
                                 {/* TODO */}
                             </div>
                         </div>
@@ -111,8 +110,7 @@ const AboutContent = () => {
                 </div>
             </div>
 
-
-        </div>
+        </section>
     )
 }
 

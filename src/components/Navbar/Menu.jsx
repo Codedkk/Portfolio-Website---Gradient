@@ -8,7 +8,7 @@ const Menu = () => {
     const [navOpen, setNavOpen] = useState(false)
 
     return (
-        <div className="menu">
+        <section className="menu">
             <i className="fa-solid fa-ellipsis " onClick={() => setNavOpen(!navOpen)}></i>
             {navOpen &&
                 <div className="ham-menu" >
@@ -30,7 +30,7 @@ const Menu = () => {
                     <button className="button button-ham " onClick={handleButtonMail}>✧ Say HI! ✧</button>
                 </div>}
 
-        </div>
+        </section>
     )
 
 }
