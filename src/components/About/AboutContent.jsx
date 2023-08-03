@@ -43,7 +43,7 @@ const AboutContent = () => {
     return (
         <div>
 
-            <div className="about-content container" ref={el => about_content = el}>
+            <div className="about-content container" id="about" ref={el => about_content = el}>
 
                 <div className="about-container">
 

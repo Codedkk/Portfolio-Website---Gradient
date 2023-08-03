@@ -38,7 +38,7 @@ const stacksInfo = {
 
 const ProjectsContent = () => {
     return (
-        <div className='projects-content container'>
+        <div className='projects-content container' id="projects">
             <div className="projects-title">PROJECTS</div>
             {projectInfo.map((project, index) => (
                 <ProjectsCard

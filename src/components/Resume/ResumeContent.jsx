@@ -36,7 +36,7 @@ const ResumeContent = () => {
     }, []);
 
     return (
-        <div className='resume-content ' ref={el => resume_content = el}>
+        <div className='resume-content' id="resume" ref={el => resume_content = el}>
             <div>
                 <div className="resume-title">WORK WITH ME</div>
 

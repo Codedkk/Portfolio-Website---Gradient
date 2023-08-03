@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
+
 import Menu from './Menu';
 import gsap from 'gsap';
 
@@ -35,9 +36,21 @@ const Navbar = ({ }) => {
             <Menu />
             <div className="nav_right">
                 <div className="navbar-menu" >
-                    <Link to="/project" className="link">PROJECTS</Link>
-                    <Link to="/project" className="link">RESUME</Link>
-                    <Link to="/project" className="link">ABOUT</Link>
+                    <Link to="projects"
+                        spy={true}
+                        smooth={true}
+                        offset={-50}
+                        duration={500} className="link">PROJECTS</Link>
+                    <Link to="resume"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={700} className="link">RESUME</Link>
+                    <Link to="about"
+                        spy={true}
+                        smooth={true}
+                        offset={-500}
+                        duration={900} className="link">ABOUT</Link>
                     <button className="button button-nav" onClick={handleButtonDownload}>WORK WITH ME</button>
                 </div>
             </div>

@@ -29,11 +29,12 @@ function Modal({ setOpenModal }) {
                             <i className="fab fa-github"></i>
                         </a>
                         <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="about_social_icon" onClick={handleButtonMail}>
-                            <i className="fa-brands fa-linkedin-in"></i>
+                            <i className="fa-regular fa-envelope"></i>
+
                         </a>
 
                         <div className="about_social_icon" >
-                            <i className="fa-regular fa-envelope"></i>
+                            <i className="fa-brands fa-linkedin-in"></i>
                         </div>
                         {/* TODO */}
                     </div>
