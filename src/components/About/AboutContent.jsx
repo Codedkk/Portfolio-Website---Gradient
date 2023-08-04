@@ -6,33 +6,35 @@ gsap.registerPlugin(ScrollTrigger);
 
 const AboutContent = () => {
 
-    let about_content = useRef(null);
+    // let about_content = useRef(null);
 
-    useLayoutEffect(() => {
-        const ctx = gsap.context((self) => {
-            const about_contents = self.selector('div');
-            about_contents.forEach((about_content) => {
-                gsap.from(about_content, {
-                    delay: 10000000,
-                    duration: 900,
-                    x: "80%",
-                    scrollTrigger: {
-                        trigger: about_content,
-                        scrub: .005,
-                        start: 'top 300%',
-                        end: 'bottom center',
-                        toggleActions: "none pause none none",
-                        // markers: {
-                        //     startColor: "purple",
-                        //     endColor: "blue",
-                        // }
-                    },
-                });
+    // useLayoutEffect(() => {
+    //     const ctx = gsap.context((self) => {
+    //         const about_contents = self.selector('div');
+    //         about_contents.forEach((about_content) => {
+    //             gsap.from(about_content, {
+    //                 delay: 10000000,
+    //                 duration: 900,
+    //                 x: "80%",
+    //                 scrollTrigger: {
+    //                     trigger: about_content,
+    //                     scrub: .005,
+    //                     start: 'top 300%',
+    //                     end: 'bottom center',
+    //                     toggleActions: "none pause none none",
+    //                     // markers: {
+    //                     //     startColor: "purple",
+    //                     //     endColor: "blue",
+    //                     // }
+    //                 },
+    //             });
 
-            });
-        }, about_content);
-        return () => ctx.revert();
-    }, []);
+    //         });
+    //     }, about_content);
+    //     return () => ctx.revert();
+    // }, []);
+    // ref={el => about_content = el}
+
 
     //TODO
     const handleButtonMail = () => {
@@ -42,7 +44,7 @@ const AboutContent = () => {
 
     return (
         <section>
-            <div className="about-content container" id="about" ref={el => about_content = el}>
+            <div className="about-content container" id="about" >
 
                 <div className="about-container">
 
@@ -93,9 +95,11 @@ const AboutContent = () => {
                             <div className="about_social" >
                                 <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="about_social_icon">
                                     <i className="fab fa-github"></i>
+
                                 </a>
                                 <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="about_social_icon" onClick={handleButtonMail}>
                                     <i className="fa-regular fa-envelope"></i>
+
 
                                 </a>
                                 <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="about_social_icon">

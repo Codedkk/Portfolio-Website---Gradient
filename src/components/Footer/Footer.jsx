@@ -51,7 +51,7 @@ const Footer = () => {
                     </div>
 
                     <div className="footer-by">
-                        Developed By <span className="logo">Jellyfish</span>
+                        Developed By <span className="logo">KoliGreen</span>
                     </div>
                 </div>
             </footer>

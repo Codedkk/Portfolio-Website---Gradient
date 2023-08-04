@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import gsap from 'gsap';
 import Mailmodal from "./Mailmodal"
 import Shuffler from './Shuffler';
+import Sparkle from 'react-sparkle'
 
 
 const Hero = ({ }) => {
@@ -11,6 +12,20 @@ const Hero = ({ }) => {
     // let hero_social = useRef(null);
 
     const [modalOpen, setModalOpen] = useState(false);
+    const handleButtonHover = () => {
+        document.body.style.backgroundImage = "url(/asset/img/lighter.png)";
+        document.body.style.backgroundSize = "150%";
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundPosition = "center top";
+    };
+
+    const handleButtonUnhover = () => {
+        document.body.style.backgroundImage = "url(/asset/img/gradient.png)";
+        document.body.style.backgroundSize = "150%";
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundPosition = "center top";
+    };
+
 
 
     useEffect(() => {
@@ -39,7 +54,7 @@ const Hero = ({ }) => {
     return (
         <section className="hero">
             <div className="hero_text" ref={el => hero_text = el} >
-                <span >Fili is &nbsp;
+                <span >Koli is &nbsp;
                     <span>a&nbsp;
                         <div className="hero_text-first">
                             <span> ✷︎ </span>
@@ -69,9 +84,25 @@ const Hero = ({ }) => {
                 </span> */}
 
             </div>
-            <button className="button button-hero" ref={el => button_hero = el} onClick={() => {
-                setModalOpen(true);
-            }} >✧ Say HI! ✧</button>
+            <button
+                onMouseEnter={handleButtonHover}
+                onMouseLeave={handleButtonUnhover}
+
+                className="button button-hero" ref={el => button_hero = el} onClick={() => {
+                    setModalOpen(true);
+                }} >
+                <Sparkle
+                    fadeOutSpeed={20}
+                    newSparkleOnFadeOut={true}
+                    flicker
+                    flickerSpeed="slow"
+                    minSize={3}
+                    maxSize={5}
+                    count={100}
+                />
+                Say HI! </button>
+
+
             {modalOpen && <Mailmodal setOpenModal={setModalOpen} />}
 
         </section>

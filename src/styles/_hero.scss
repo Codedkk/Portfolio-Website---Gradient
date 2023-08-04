@@ -1,3 +1,10 @@
+body {
+    background-image: url(/asset/img/gradient.png);
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
 .hero {
 
     @extend .container;
@@ -40,24 +47,33 @@
         }
 
 
-        .hero_text-first {
-            span:nth-child(2) {
-                text-decoration: underline;
-                text-decoration-thickness: 1px;
-                text-underline-offset: 4px;
-            }
+        // .hero_text-first {
+        //     span:nth-child(2) {
+        //         text-decoration: underline;
+        //         text-decoration-thickness: 1px;
+        //         text-underline-offset: 4px;
+        //     }
 
-        }
+        // }
 
 
 
     }
 
     .button-hero {
+        // font-family: $ff-style;
+        letter-spacing: 4px;
+        font-weight: $fw-500;
+
         display: flex;
         background: transparent;
         width: 80%;
         margin: $margin-1 0 $margin-3;
+
+
+
+
+
     }
 
 
@@ -73,6 +89,13 @@
 
         .button-hero {
             width: 13rem;
+
+            &:hover {
+                color: rgb(233, 229, 229);
+                border: rgb(233, 229, 229);
+                box-shadow: inset 0 0 2px white, 0 0 2px white;
+                // ✧
+            }
         }
 
         .hero_social {

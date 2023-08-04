@@ -1,6 +1,7 @@
 .projects-card {
 
     font-family: $ff-text;
+    overflow: hidden;
 
     .header-line {
         border-top: 1px solid black;
@@ -12,7 +13,8 @@
         display: flex;
         flex-direction: column;
         gap: $margin-3;
-        padding: $margin-6 0 $margin-6 0;
+        padding: $margin-6 0 $margin-4 0;
+
 
 
         .card-right {
@@ -32,13 +34,29 @@
                     gap: 5%;
                     align-items: center;
                     justify-content: flex-start;
+                    letter-spacing: 2.2px;
 
                     .card-live {
+                        cursor: pointer;
+                        width: 2rem;
                         font-size: .5rem;
                     }
 
                 }
 
+                .card-desc {
+
+
+                    .star-list {
+                        list-style-type: none;
+
+                        padding-inline-start: 0px;
+
+                        .star {
+                            margin-right: 8px;
+                        }
+                    }
+                }
 
                 .stack-icons {
                     margin: $margin-3 0 $margin-1 0;
@@ -179,20 +197,23 @@
 
     @include L {
         .card-content {
-            font-size: $fs-logo;
+
             font-size: $fs-text-l;
             display: flex;
             flex-direction: row;
-            gap: 4rem;
+            gap: 8rem;
 
             .card-right {
-                flex: 2;
+                flex: 2.5;
                 gap: 2rem;
 
                 .card-heading {
-                    gap: 2rem;
+                    gap: 1rem;
+
 
                     .card-title {
+                        // font-size: $fs-social;
+                        margin-bottom: $margin-3;
 
                         .card-live {
                             font-size: 1.5rem;
@@ -204,7 +225,7 @@
                         display: flex;
                         align-items: center;
                         justify-content: flex-start;
-                        gap: 1rem;
+                        gap: 2rem;
 
 
                         .card-button {
@@ -222,6 +243,7 @@
 
             .card-left {
                 flex: 3;
+                margin-top: 5%;
             }
         }
 

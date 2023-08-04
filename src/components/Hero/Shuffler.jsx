@@ -11,7 +11,7 @@ const Shuffler = () => {
     const maxDisplayLength = 2; // maximum number of letters displayed
 
     useEffect(() => {
-        const delay = 4000; // delay between each word shuffle
+        const delay = 3000; // delay between each word shuffle
 
         const shuffleArray = (array) => {
             let currentIndex = array.length;
