@@ -1,7 +1,22 @@
 // ----- font family -----
+@font-face {
+    font-family: 'Gambarino';
+    src: url('../../public/asset/font/Gambarino-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cabinet Grotesk';
+    src: url('../../public/asset/font/CabinetGrotesk-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Pinyon Script';
+    src: url('../../public/asset/font/PinyonScript-Regular.ttf') format('truetype');
+
+}
+
 $ff-title: "Gambarino", serif;
 $ff-text: "Cabinet Grotesk", sans-serif;
-// $ff-style: "Zapfino Linotype One", sans-serif;
 $ff-style: "Pinyon Script", sans-serif;
 
 

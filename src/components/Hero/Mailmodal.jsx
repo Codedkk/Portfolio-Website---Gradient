@@ -22,15 +22,15 @@ function Modal({ setOpenModal }) {
 
                     <div className="about_social" >
                         <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="about_social_icon">
-                            <i className="fab fa-github"></i>
+                            <img src="../../public/asset/img/icon/github.svg" alt="" />
                         </a>
                         <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="about_social_icon" onClick={handleButtonMail}>
-                            <i className="fa-regular fa-envelope"></i>
+                            <img src="../../public/asset/img/icon/mail.svg" alt="" />
 
                         </a>
 
                         <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="about_social_icon">
-                            <i className="fa-brands fa-linkedin-in"></i>
+                            <img src="../../public/asset/img/icon/linkedin.svg" alt="" />
                         </a>
                         {/* TODO */}
                     </div>

@@ -15,7 +15,7 @@ const ResumeContent = () => {
                 gsap.from(resume_content, {
                     delay: 2,
                     // duration: 90,
-                    x: -400,
+                    x: -200,
                     scrollTrigger: {
                         trigger: resume_content,
                         scrub: .005,

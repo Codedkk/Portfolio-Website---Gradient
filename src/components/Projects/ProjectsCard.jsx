@@ -8,6 +8,13 @@ import { LinkExternalIcon } from '@primer/octicons-react'
 
 gsap.registerPlugin(ScrollTrigger);
 
+
+// timeline.to(card_content, { duration: 9 },)
+//     .addPause(100)
+//     .to(card_content, { duration: 9 }, + 5)
+//     .addPause(100000000000000)
+//     .to(card_content, { duration: 9 });
+
 // var timeline = gsap.timeline();
 // let card_content = useRef();
 
@@ -34,13 +41,6 @@ gsap.registerPlugin(ScrollTrigger);
 //     return () => ctx.revert();
 // }, []);
 
-
-// timeline.to(card_content, { duration: 9 },)
-//     .addPause(100)
-//     .to(card_content, { duration: 9 }, + 5)
-//     .addPause(100000000000000)
-// .to(card_content, { duration: 9 });
-
 // ref={el => card_content = el}
 
 
@@ -51,7 +51,37 @@ const ProjectsCard = ({ projectTitle, images, brief, stacks, stacksInfo, isLast,
     const containerRef = useRef(null);
     const gradientRef = useRef(null);
 
+
+    var timeline = gsap.timeline();
+
+    let card_content = useRef();
+
+
+    useLayoutEffect(() => {
+        const ctx = gsap.context((self) => {
+            const card_sections = self.selector('div');
+            card_sections.forEach((card_section) => {
+                const animation = gsap.from(card_section, {
+                    delay: .3,
+                    x: -80,
+                    scrollTrigger: {
+                        trigger: card_section,
+                        scrub: true,
+                        start: 'top 100%',
+                        end: 'top 90%',
+                        toggleActions: "none pause none none",
+                        // markers: true
+                    },
+                });
+            });
+        }, card_content);
+        return () => ctx.revert();
+    }, []);
+
+
     useEffect(() => {
+
+
         const container = containerRef.current;
         const gradient = gradientRef.current;
         const mouseX = { value: 0 };
@@ -115,14 +145,11 @@ const ProjectsCard = ({ projectTitle, images, brief, stacks, stacksInfo, isLast,
 
     return (
         <div className="projects-card " ref={containerRef}>
-            <div className="card-content" ref={gradientRef}>
+            <div className="card-content" ref={gradientRef} >
                 <div className="card-right" >
                     <div className="card-heading">
                         <div className="card-title">
                             <h3 className="project-title">{projectTitle}</h3>
-
-                            {/* <LinkExternalIcon size={24} className="card-live" /> */}
-                            <img src="/asset/img/live-broadcasting.svg" alt="view live projects" className="card-live" />
                         </div>
                         <div className="card-desc">
                             <ul className="star-list">
@@ -131,9 +158,11 @@ const ProjectsCard = ({ projectTitle, images, brief, stacks, stacksInfo, isLast,
                                 ))}
                             </ul>
                         </div>
+
                         <div className="card-icons">
-                            <button className="button card-button">VIEW CODE</button>
                             <div className="stack-icons">
+                                {/* <img src="../../public/asset/img/icon/live.svg" alt="view live projects" className="card-live" /> */}
+                                <img src="../../public/asset/img/icon/github.svg" alt="" className="card-github" />
                                 {stacks.map((stack, index) => (
                                     <img
                                         key={index}
@@ -143,12 +172,13 @@ const ProjectsCard = ({ projectTitle, images, brief, stacks, stacksInfo, isLast,
                                     />
                                 ))}
                             </div>
+                            <button className="button card-button">VIEW LIVE</button>
                         </div>
                     </div>
 
                 </div>
 
-                <div className="card-left">
+                <div className="card-left" ref={el => card_content = el}>
                     <div className="project-thumbnail">
                         <Slider images={images} />
                     </div>

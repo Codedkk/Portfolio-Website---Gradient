@@ -6,34 +6,34 @@ gsap.registerPlugin(ScrollTrigger);
 
 const AboutContent = () => {
 
-    // let about_content = useRef(null);
+    let about_content = useRef(null);
 
-    // useLayoutEffect(() => {
-    //     const ctx = gsap.context((self) => {
-    //         const about_contents = self.selector('div');
-    //         about_contents.forEach((about_content) => {
-    //             gsap.from(about_content, {
-    //                 delay: 10000000,
-    //                 duration: 900,
-    //                 x: "80%",
-    //                 scrollTrigger: {
-    //                     trigger: about_content,
-    //                     scrub: .005,
-    //                     start: 'top 300%',
-    //                     end: 'bottom center',
-    //                     toggleActions: "none pause none none",
-    //                     // markers: {
-    //                     //     startColor: "purple",
-    //                     //     endColor: "blue",
-    //                     // }
-    //                 },
-    //             });
+    useLayoutEffect(() => {
+        const ctx = gsap.context((self) => {
+            const about_contents = self.selector('div');
+            about_contents.forEach((about_content) => {
+                gsap.from(about_content, {
+                    delay: 10000000,
+                    duration: 900,
+                    x: "80%",
+                    scrollTrigger: {
+                        trigger: about_content,
+                        scrub: .005,
+                        start: 'top 300%',
+                        end: 'bottom center',
+                        toggleActions: "none pause none none",
+                        // markers: {
+                        //     startColor: "purple",
+                        //     endColor: "blue",
+                        // }
+                    },
+                });
 
-    //         });
-    //     }, about_content);
-    //     return () => ctx.revert();
-    // }, []);
-    // ref={el => about_content = el}
+            });
+        }, about_content);
+        return () => ctx.revert();
+    }, []);
+
 
 
     //TODO
@@ -46,7 +46,7 @@ const AboutContent = () => {
         <section>
             <div className="about-content container" id="about" >
 
-                <div className="about-container">
+                <div className="about-container" >
 
                     <div className="about-top">
 
@@ -64,7 +64,7 @@ const AboutContent = () => {
                                 <img src="asset/img/about-frame.svg" alt="portrait" className="about-frame" />
                             </div>
                         </div>
-                        <div className="about-right">
+                        <div className="about-right" ref={el => about_content = el}>
                             <div className="about-skill">
                                 <h4 className="about-skill-title">Skillset</h4>
                                 <div className="about-skillset">
@@ -94,16 +94,18 @@ const AboutContent = () => {
                             </div>
                             <div className="about_social" >
                                 <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="about_social_icon">
-                                    <i className="fab fa-github"></i>
+                                    {/* <i className="fab fa-github"></i> */}
+                                    <img src="../../public/asset/img/icon/github.svg" alt="" />
 
                                 </a>
                                 <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="about_social_icon" onClick={handleButtonMail}>
-                                    <i className="fa-regular fa-envelope"></i>
-
+                                    {/* <i className="fa-regular fa-envelope"></i> */}
+                                    <img src="../../public/asset/img/icon/mail.svg" alt="" />
 
                                 </a>
                                 <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="about_social_icon">
-                                    <i className="fa-brands fa-linkedin-in"></i>
+                                    {/* <i className="fa-brands fa-linkedin-in"></i> */}
+                                    <img src="../../public/asset/img/icon/linkedin.svg" alt="" />
                                 </a>
                                 {/* TODO */}
                             </div>
