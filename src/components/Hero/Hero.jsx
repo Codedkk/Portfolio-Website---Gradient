@@ -54,7 +54,7 @@ const Hero = ({ }) => {
     return (
         <section className="hero">
             <div className="hero_text" ref={el => hero_text = el} >
-                <span >Koli is &nbsp;
+                <span >Kiki is &nbsp;
                     <span>a&nbsp;
                         <div className="hero_text-first">
                             <span> ✷︎ </span>

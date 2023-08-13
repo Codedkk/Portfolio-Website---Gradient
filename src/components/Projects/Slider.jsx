@@ -11,18 +11,19 @@ const Slider = ({ images }) => {
     // ];
 
     const prevSlide = () => {
-        setCurrentSlide(currentSlide === 0 ? 2 : (prev) => prev - 1);
+        setCurrentSlide(currentSlide === 0 ? 3 : (prev) => prev - 1);
     };
     const nextSlide = () => {
-        setCurrentSlide(currentSlide === 2 ? 0 : (prev) => prev + 1);
+        setCurrentSlide(currentSlide === 3 ? 0 : (prev) => prev + 1);
     };
 
     return (
         <div className="slider">
-            <div className="slider-container" style={{ transform: `translateX(-${currentSlide * 50}vw)` }}>
+            <div className="slider-container" style={{ transform: `translateX(-${currentSlide * 45.7}vw)` }}>
                 <img src={images[0]} alt="" />
                 <img src={images[1]} alt="" />
                 <img src={images[2]} alt="" />
+                <img src={images[3]} alt="" />
             </div>
             <div className="icons">
                 <div className="icon" onClick={prevSlide}>

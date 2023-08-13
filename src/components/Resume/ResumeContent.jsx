@@ -43,7 +43,6 @@ const ResumeContent = () => {
         <section className='resume-content' id="resume" ref={el => resume_content = el}>
             <div>
                 <div className="resume-title">WORK WITH ME</div>
-
             </div>
             <div className="resume-button">
                 <button className="button button-resume" onClick={handleButtonDownload}>✧ Get Resume ✧</button>

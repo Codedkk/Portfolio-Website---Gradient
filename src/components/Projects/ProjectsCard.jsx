@@ -110,6 +110,7 @@ const ProjectsCard = ({ projectTitle, images, brief, stacks, stacksInfo, isLast,
                     ${mouseSecColor} 30%,
                     transparent 90%
                   )`,
+
             });
         }
 
@@ -139,7 +140,9 @@ const ProjectsCard = ({ projectTitle, images, brief, stacks, stacksInfo, isLast,
         };
     }, []);
 
-
+    const handleButtonDownload = () => {
+        window.location.href = 'https://example.com/path/to/pdf';
+    };
 
 
 
@@ -158,21 +161,29 @@ const ProjectsCard = ({ projectTitle, images, brief, stacks, stacksInfo, isLast,
                                 ))}
                             </ul>
                         </div>
-
-                        <div className="card-icons">
-                            <div className="stack-icons">
+                        {/* <div className="stack-icons">
                                 {/* <img src="../../public/asset/img/icon/live.svg" alt="view live projects" className="card-live" /> */}
-                                <img src="../../public/asset/img/icon/github.svg" alt="" className="card-github" />
-                                {stacks.map((stack, index) => (
-                                    <img
-                                        key={index}
-                                        src={stacksInfo[stack]}
-                                        alt={stack}
-                                        className="stack-icon"
-                                    />
-                                ))}
-                            </div>
-                            <button className="button card-button">VIEW LIVE</button>
+                        {/* <img src="../../public/asset/img/icon/github.svg" alt="" className="card-github" /> */}
+                        {/* {stacks.map((stack, index) => (
+                                <img
+                                    key={index}
+                                    src={stacksInfo[stack]}
+                                    alt={stack}
+                                    className="stack-icon"
+                                />
+                            ))} */}
+                        {/* </div> */}
+                        <div className="card-icons">
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" >
+                                <button className="button card-button" >
+                                    <img src="../../public/asset/img/arrow.png" alt="" className="button-icon" />VIEW LIVE
+                                </button>
+                            </a>
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" >
+                                <button className="button card-button" >
+                                    <img src="../../public/asset/img/icon/github.svg" alt="" className="button-icon" />VIEW LIVE
+                                </button>
+                            </a>
                         </div>
                     </div>
 
@@ -187,7 +198,7 @@ const ProjectsCard = ({ projectTitle, images, brief, stacks, stacksInfo, isLast,
             </div>
             <div className={`${isLast ? '' : 'header-line'}`}></div>
 
-        </div>
+        </div >
     );
 };
 

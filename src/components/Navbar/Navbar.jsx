@@ -31,7 +31,7 @@ const Navbar = ({ }) => {
     return (
         <nav className="navbar container">
             <div className="nav_left">
-                <Link to="/" className="logo link">KOliGREEN</Link>
+                <Link to="/" className="logo link">KIKIDENG</Link>
             </div>
             <Menu />
             <div className="nav_right">
