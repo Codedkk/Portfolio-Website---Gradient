@@ -139,12 +139,12 @@ const ProjectsCard = ({ projectTitle, images, brief, stacks, stacksInfo, isLast,
                         <div className="card-icons">
                             <a href={liveLink} target="_blank" rel="noopener noreferrer" >
                                 <button className="button card-button" >
-                                    <img src="../../public/asset/img/arrow.png" alt="" className="button-icon" />VIEW LIVE
+                                    <img src="/asset/img/arrow.png" alt="" className="button-icon" />VIEW LIVE
                                 </button>
                             </a>
                             <a href={repoLink} target="_blank" rel="noopener noreferrer" >
                                 <button className="button card-button" >
-                                    <img src="../../public/asset/img/icon/github.svg" alt="" className="button-icon" />VIEW CODE
+                                    <img src="/asset/img/icon/github.svg" alt="" className="button-icon" />VIEW CODE
                                 </button>
                             </a>
                         </div>
