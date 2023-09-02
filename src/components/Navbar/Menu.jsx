@@ -3,7 +3,7 @@ import { Link } from 'react-scroll';
 
 const Menu = () => {
     const handleButtonMail = () => {
-        window.open('mailto:recipient@example.com');
+        window.open('mailto:KKxDEV@proton.me');
     };
     const [navOpen, setNavOpen] = useState(false)
 
@@ -14,7 +14,7 @@ const Menu = () => {
                 <div className="ham-menu" >
                     <i className="fas fa-times ham-menu-close" onClick={() => setNavOpen(!navOpen)}></i>
                     <div className="ham-title">Let's connect at</div>
-                    <div className="ham-mail">124334@outlook.com</div>
+                    <div className="ham-mail">KKxDEV@proton.me</div>
                     <div className="about_social" >
                         <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="about_social_icon">
                             <i className="fab fa-github"></i>

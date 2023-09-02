@@ -38,7 +38,7 @@ const AboutContent = () => {
 
     //TODO
     const handleButtonMail = () => {
-        window.open('mailto:recipient@example.com');
+        window.open('mailto:KKxDEV@proton.me');
     };
 
 
@@ -78,10 +78,11 @@ const AboutContent = () => {
                                         <li>GIT</li>
                                     </ul>
                                     <ul>
-                                        <li>Tailwind</li>
+
                                         <li>MUI</li>
                                         <li>Figma</li>
                                         <li>Abobe Suit</li>
+                                        <li>Aseprite</li>
                                         <li>ChatGPT</li>
 
                                     </ul>
@@ -93,7 +94,7 @@ const AboutContent = () => {
                                 brands. Let's collaborate to e modern companies and boost their brands.
                             </div>
                             <div className="about_social" >
-                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="about_social_icon">
+                                <a href="https://github.com/KKDEVE" target="_blank" rel="noopener noreferrer" className="about_social_icon">
                                     {/* <i className="fab fa-github"></i> */}
                                     <img src="../../public/asset/img/icon/github.svg" alt="" />
 
@@ -103,11 +104,10 @@ const AboutContent = () => {
                                     <img src="../../public/asset/img/icon/mail.svg" alt="" />
 
                                 </a>
-                                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="about_social_icon">
+                                <a href="https://www.linkedin.com/in/kiki-deng" target="_blank" rel="noopener noreferrer" className="about_social_icon">
                                     {/* <i className="fa-brands fa-linkedin-in"></i> */}
                                     <img src="../../public/asset/img/icon/linkedin.svg" alt="" />
                                 </a>
-                                {/* TODO */}
                             </div>
                         </div>
 

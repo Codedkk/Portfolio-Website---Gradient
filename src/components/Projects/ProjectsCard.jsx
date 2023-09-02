@@ -9,44 +9,7 @@ import { LinkExternalIcon } from '@primer/octicons-react'
 gsap.registerPlugin(ScrollTrigger);
 
 
-// timeline.to(card_content, { duration: 9 },)
-//     .addPause(100)
-//     .to(card_content, { duration: 9 }, + 5)
-//     .addPause(100000000000000)
-//     .to(card_content, { duration: 9 });
-
-// var timeline = gsap.timeline();
-// let card_content = useRef();
-
-
-// useLayoutEffect(() => {
-//     const ctx = gsap.context((self) => {
-//         const card_sections = self.selector('div');
-//         card_sections.forEach((card_section) => {
-//             const animation = gsap.from(card_section, {
-//                 delay: 2,
-//                 // duration: 900,
-//                 x: -50,
-//                 scrollTrigger: {
-//                     trigger: card_section,
-//                     scrub: true,
-//                     start: 'top 100%',
-//                     end: 'top 20%',
-//                     toggleActions: "none pause none none",
-//                     // markers: true
-//                 },
-//             });
-//         });
-//     }, card_content);
-//     return () => ctx.revert();
-// }, []);
-
-// ref={el => card_content = el}
-
-
-
-const ProjectsCard = ({ projectTitle, images, brief, stacks, stacksInfo, isLast, mouseColor, mouseSecColor }) => {
-
+const ProjectsCard = ({ projectTitle, images, brief, stacks, stacksInfo, isLast, mouseColor, mouseSecColor, repoLink, liveLink }) => {
 
     const containerRef = useRef(null);
     const gradientRef = useRef(null);
@@ -174,14 +137,14 @@ const ProjectsCard = ({ projectTitle, images, brief, stacks, stacksInfo, isLast,
                             ))} */}
                         {/* </div> */}
                         <div className="card-icons">
-                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" >
+                            <a href={liveLink} target="_blank" rel="noopener noreferrer" >
                                 <button className="button card-button" >
                                     <img src="../../public/asset/img/arrow.png" alt="" className="button-icon" />VIEW LIVE
                                 </button>
                             </a>
-                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" >
+                            <a href={repoLink} target="_blank" rel="noopener noreferrer" >
                                 <button className="button card-button" >
-                                    <img src="../../public/asset/img/icon/github.svg" alt="" className="button-icon" />VIEW LIVE
+                                    <img src="../../public/asset/img/icon/github.svg" alt="" className="button-icon" />VIEW CODE
                                 </button>
                             </a>
                         </div>

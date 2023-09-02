@@ -51,7 +51,10 @@ const Navbar = ({ }) => {
                         smooth={true}
                         offset={-500}
                         duration={900} className="link">ABOUT</Link>
-                    <button className="button button-nav" onClick={handleButtonDownload}>WORK WITH ME</button>
+                    <a href="/asset/cv.pdf" download><button className="button button-nav" >WORK WITH ME</button></a>
+                    {/* onClick={handleButtonDownload} */}
+
+
                 </div>
             </div>
 

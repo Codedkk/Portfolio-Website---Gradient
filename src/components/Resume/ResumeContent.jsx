@@ -45,7 +45,9 @@ const ResumeContent = () => {
                 <div className="resume-title">WORK WITH ME</div>
             </div>
             <div className="resume-button">
-                <button className="button button-resume" onClick={handleButtonDownload}>✧ Get Resume ✧</button>
+                <a href="/asset/cv.pdf" download><button className="button button-resume" >✧ Get Resume ✧</button>
+                </a>
+                {/* onClick={handleButtonDownload} */}
             </div>
         </section>
     )

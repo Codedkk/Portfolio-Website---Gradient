@@ -1,41 +1,24 @@
-import React, { useState, useRef, useEffect, useLayoutEffect } from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import React from 'react';
 import { Link } from 'react-scroll';
-
-gsap.registerPlugin(ScrollTrigger);
 
 const Footer = () => {
 
-    let footer = useRef(null);
+    const handleButtonMail = () => {
+        window.open('mailto:KK_DEV@outlook.com');
+    };
+    const handleLinkedin = () => {
+        const url = "https://www.linkedin.com/in/kiki-deng";
+        window.open(url, "_blank");
+    };
+    const handleGithub = () => {
+        const url = "https://github.com/KKDEVE";
+        window.open(url, "_blank");
+    };
 
-    // useLayoutEffect(() => {
-    //     const ctx = gsap.context((self) => {
-    //         const footers = self.selector('div');
-    //         footers.forEach((footer) => {
-    //             gsap.from(footer, {
-    //                 y: -1000,
-    //                 scrollTrigger: {
-    //                     trigger: footer,
-    //                     scrub: .005,
-    //                     start: 'top 120%',
-    //                     end: 'top 10%',
-    //                     toggleActions: "none pause none none",
-    //                     // markers: {
-    //                     //     startColor: "black",
-    //                     //     endColor: "pink",
-    //                     // }
-    //                 },
-    //             });
-
-    //         });
-    //     }, footer);
-    //     return () => ctx.revert();
-    // }, []);
 
     return (
         <>
-            <footer className="footer container" ref={el => footer = el}>
+            <footer className="footer container" >
                 <div className="footer-content">
                     <div className="footer-nav">
                         <Link to="projects"
@@ -55,9 +38,10 @@ const Footer = () => {
                             duration={900} className="link">ABOUT</Link>
                     </div>
                     <div className="footer-icons">
-                        <img src="../../public/asset/img/icon/github.svg" alt="" />
-                        <img src="../../public/asset/img/icon/mail.svg" alt="" />
-                        <img src="../../public/asset/img/icon/linkedin.svg" alt="" />
+                        <img src="/asset/img/icon/github.svg" alt="" onClick={handleGithub} />
+                        <img src="/asset/img/icon/mail.svg" alt="" onClick={handleButtonMail} />
+                        <img src="/asset/img/icon/linkedin.svg" alt="" onClick={handleLinkedin} />
+
 
                     </div>
 

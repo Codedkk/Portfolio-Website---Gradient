@@ -3,6 +3,7 @@ import React, { useState } from "react";
 
 const Slider = ({ images }) => {
     const [currentSlide, setCurrentSlide] = useState(0);
+    const [imageWidth, setImageWidth] = useState(0);
 
     // const data = [
     //     "public/asset/img/ProjectsContent/Free_iPhone_12_Mockup_3.jpeg",
@@ -19,11 +20,11 @@ const Slider = ({ images }) => {
 
     return (
         <div className="slider">
-            <div className="slider-container" style={{ transform: `translateX(-${currentSlide * 45.7}vw)` }}>
-                <img src={images[0]} alt="" />
-                <img src={images[1]} alt="" />
-                <img src={images[2]} alt="" />
-                <img src={images[3]} alt="" />
+            <div className="slider-container" style={{ transform: `translateX(-${currentSlide * imageWidth}px)` }}>
+                <img src={images[0]} alt="" onLoad={(e) => setImageWidth(e.target.offsetWidth)} />
+                <img src={images[1]} alt="" onLoad={(e) => setImageWidth(e.target.offsetWidth)} />
+                <img src={images[2]} alt="" onLoad={(e) => setImageWidth(e.target.offsetWidth)} />
+                <img src={images[3]} alt="" onLoad={(e) => setImageWidth(e.target.offsetWidth)} />
             </div>
             <div className="icons">
                 <div className="icon" onClick={prevSlide}>
