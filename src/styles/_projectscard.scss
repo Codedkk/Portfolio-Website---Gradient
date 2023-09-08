@@ -35,18 +35,9 @@
                     align-items: center;
                     justify-content: flex-start;
                     letter-spacing: 2.2px;
-
-                    // .card-live {
-                    //     cursor: pointer;
-                    //     width: 2rem;
-                    //     font-size: .5rem;
-                    // }
-
                 }
 
                 .card-desc {
-
-
                     .star-list {
                         list-style-type: none;
                         display: flex;
@@ -64,26 +55,6 @@
                 .card-icons {
                     display: flex;
                     gap: 1rem;
-
-                    // .stack-icons {
-                    //     margin: $margin-3 0 $margin-1 0;
-                    //     display: flex;
-                    //     align-items: center;
-                    //     justify-content: flex-start;
-                    //     gap: 5%;
-                    //     margin-right: 10rem;
-                    //     // width: 5%;
-
-                    //     .card-github {
-                    //         cursor: pointer;
-                    //         width: 1.5rem;
-
-                    //     }
-
-                    //     .stack-icon {
-                    //         width: 1.3rem;
-                    //     }
-                    // }
 
                     .card-button {
                         width: 8rem;
@@ -113,10 +84,7 @@
         }
 
         .card-left {
-
-
             .project-thumbnail {
-
                 margin-bottom: $margin-2;
 
             }
@@ -130,15 +98,10 @@
         display: flex;
         flex-direction: column-reverse;
 
-
-
-
         .card-content {
             font-size: $fs-text-l;
             display: flex;
             flex-direction: column-reverse;
-
-
 
             .card-right {
                 display: flex;
@@ -151,25 +114,11 @@
 
                     .card-icons {
                         gap: 5%;
-                        // .card-button {
-                        //     width: 30%;
-                        //     height: 2.6rem;
-
-                        // }
-
-                        // .stack-icons {
-                        //     .stack-icon {
-                        //         width: 1.8rem;
-
-                        //     }
-                        // }
-
                     }
 
                 }
 
                 .card-desc {
-
                     margin-top: 0rem;
                 }
             }
@@ -213,24 +162,6 @@
                                 margin-right: 1.2rem;
                             }
                         }
-
-                        // .card-button {
-                        //     font-size: 1rem;
-                        //     width: 25%;
-                        //     height: 3rem;
-                        // }
-
-                        // .stack-icons {
-                        //     display: flex;
-
-                        //     gap: 20%;
-
-                        //     .stack-icon {
-                        //         width: 2rem;
-                        //     }
-
-
-                        // }
                     }
 
 
@@ -259,7 +190,6 @@
 
 
                     .card-title {
-                        // font-size: $fs-social;
                         margin-bottom: $margin-3;
 
                         .card-github {

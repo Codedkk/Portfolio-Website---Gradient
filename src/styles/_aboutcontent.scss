@@ -10,8 +10,6 @@
         display: none;
     }
 
-
-
     .about-left {
         display: flex;
         flex-direction: column;
@@ -33,6 +31,8 @@
 
             .about-frame {
                 width: 40%;
+                margin-top: 1rem;
+                margin-bottom: 2rem;
 
             }
         }
@@ -129,7 +129,7 @@
                         justify-content: flex-start;
 
                         .about-frame {
-                            width: 80%;
+                            width: 65%;
                         }
                     }
                 }
@@ -152,7 +152,7 @@
                 .about-meet {
                     font-size: calc($fs-title-L + 1.4rem);
                     font-weight: $fw-400;
-                    margin: $margin-7 0 $margin-5 0;
+                    margin: $margin-7 0 $margin-7 0;
                 }
 
                 .about-line {

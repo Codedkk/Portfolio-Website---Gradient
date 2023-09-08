@@ -41,9 +41,6 @@
     align-items: center;
     justify-content: space-between;
     color: $clr-text;
-    // max-width: 100%;
-
-
 
     .menu {
         .ham-menu-close {
@@ -55,6 +52,7 @@
     .logo {
         font-size: $fs-logo;
         opacity: 1;
+        cursor: pointer;
     }
 
 
@@ -73,7 +71,6 @@
 
             .navbar-menu {
                 display: flex;
-                // max-width: 100%;
                 gap: 3.5rem;
                 place-items: center;
                 cursor: pointer;

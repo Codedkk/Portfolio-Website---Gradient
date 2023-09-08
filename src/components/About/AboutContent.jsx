@@ -22,10 +22,6 @@ const AboutContent = () => {
                         start: 'top 300%',
                         end: 'bottom center',
                         toggleActions: "none pause none none",
-                        // markers: {
-                        //     startColor: "purple",
-                        //     endColor: "blue",
-                        // }
                     },
                 });
 
@@ -50,18 +46,17 @@ const AboutContent = () => {
 
                     <div className="about-top">
 
-                        <div className="about-meet">Meet Kola</div>
+                        <div className="about-meet">Meet Kiki</div>
                     </div>
                     <div className="about-bottom">
                         <div className="about-left">
 
                             <div className="about-slogan">
-                                Digital experiences for driven modern
-                                brands
+                                Digital experiences to make an impact
                             </div>
 
                             <div className="about-image">
-                                <img src="asset/img/about-frame.svg" alt="portrait" className="about-frame" />
+                                <img src="asset/img/about-frame.jpeg" alt="portrait" className="about-frame" />
                             </div>
                         </div>
                         <div className="about-right" ref={el => about_content = el}>
@@ -90,22 +85,18 @@ const AboutContent = () => {
                             </div>
 
                             <div className="about-desc">
-                                Hi, I'm a business-minded designer with 3+ ng immersive digital experiences that e modern companies and boost their e modern companies and boost their
-                                brands. Let's collaborate to e modern companies and boost their brands.
+                                Hi, I am a creative front-end developer skilled in JavaScript and React. With an eye for design, I create and implement visually appealing UI. Being a self-taught enthusiast, I stay updated with the latest techniques and sharpen my problem-solving skills. I am excited to contribute my skills and passion to create products and make an impact.
                             </div>
                             <div className="about_social" >
                                 <a href="https://github.com/KKDEVE" target="_blank" rel="noopener noreferrer" className="about_social_icon">
-                                    {/* <i className="fab fa-github"></i> */}
                                     <img src="../../public/asset/img/icon/github.svg" alt="" />
 
                                 </a>
                                 <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="about_social_icon" onClick={handleButtonMail}>
-                                    {/* <i className="fa-regular fa-envelope"></i> */}
                                     <img src="../../public/asset/img/icon/mail.svg" alt="" />
 
                                 </a>
                                 <a href="https://www.linkedin.com/in/kiki-deng" target="_blank" rel="noopener noreferrer" className="about_social_icon">
-                                    {/* <i className="fa-brands fa-linkedin-in"></i> */}
                                     <img src="../../public/asset/img/icon/linkedin.svg" alt="" />
                                 </a>
                             </div>

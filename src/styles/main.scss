@@ -15,7 +15,6 @@
 @import "navbar";
 @import "button";
 @import "hero";
-@import "blobs";
 @import "menu";
 @import "accordionitems";
 @import "projectscontent";
@@ -40,9 +39,6 @@
         color: inherit;
         text-decoration: none;
     }
-
-    // cursor: url(../../public/asset/img/cursor.png),
-    // auto;
 
     ::-webkit-scrollbar {
         display: none;

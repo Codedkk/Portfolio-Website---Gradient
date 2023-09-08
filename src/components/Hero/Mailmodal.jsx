@@ -1,7 +1,6 @@
 import React from "react";
 
 function Modal({ setOpenModal }) {
-    //TODO
     const handleButtonMail = () => {
         window.open('mailto:KKxDEV@proton.me');
     };
@@ -16,22 +15,20 @@ function Modal({ setOpenModal }) {
                 <div className="title">
                     <h1>Let's connect at 📝</h1>
                 </div>
-                {/* TODO */}
                 <div className="body">
-                    <p>KK_DEV@OUTLOOK.COM</p>
+                    <p>KKxDEV@proton.me</p>
 
                     <div className="about_social" >
                         <a href="https://github.com/KKDEVE" target="_blank" rel="noopener noreferrer" className="about_social_icon">
-                            <img src="../../public/asset/img/icon/github.svg" alt="" />
+                            <img src="/asset/img/icon/github.svg" alt="" />
                         </a>
-                        <img src="../../public/asset/img/icon/mail.svg" alt="" className="about_social_icon" onClick={handleButtonMail} />
+                        <img src="/asset/img/icon/mail.svg" alt="" className="about_social_icon" onClick={handleButtonMail} />
 
 
 
                         <a href="https://www.linkedin.com/in/kiki-deng" target="_blank" rel="noopener noreferrer" className="about_social_icon">
-                            <img src="../../public/asset/img/icon/linkedin.svg" alt="" />
+                            <img src="/asset/img/icon/linkedin.svg" alt="" />
                         </a>
-                        {/* TODO */}
                     </div>
                 </div>
 

@@ -25,7 +25,6 @@ const Menu = () => {
                         <div className="about_social_icon" >
                             <i className="fa-brands fa-linkedin-in"></i>
                         </div>
-                        {/* TODO */}
                     </div>
                     <button className="button button-ham " onClick={handleButtonMail}>✧ Say HI! ✧</button>
                 </div>}

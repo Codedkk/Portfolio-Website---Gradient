@@ -4,7 +4,7 @@ import ProjectsCard from './ProjectsCard';
 const projectInfo = [
     {
         projectTitle: "fashion ecommerce website",
-        images: ["/asset/img/ProjectsContent/Projects/e/e-mac.jpg", "/asset/img/ProjectsContent/Projects/e/e-section.jpg", "/asset/img/ProjectsContent/Projects/e/e-mac1.jpg", "/asset/img/ProjectsContent/Projects/e/e-ipad.jpg",],
+        images: ["/asset/img/ProjectsContent/Projects/e/e-mac.jpg", "/asset/img/ProjectsContent/Projects/e/e-section.jpg", "/asset/img/ProjectsContent/Projects/e/e-ipad.jpg", "/asset/img/ProjectsContent/Projects/e/e-mac2.jpg"],
         brief: ["Develop, test and deploy a fully responsive fashion e-commerce website with a modern design using React, React Redux, and Sass.", "Leverage API data fetching techniques to enable advanced filtering options and smooth browsing through product categories.", "A shopping cart with state persistence, allows users to add and manage items effortlessly.", "Powered by Strapi, a headless CMS, it seamlessly integrates content management capabilities, allowing for effortless updates and modifications."],
         stacks: ["react", "sass", "gsap"],
         mouseSecColor: "rgb(170, 200, 167)",
@@ -15,7 +15,7 @@ const projectInfo = [
     {
         projectTitle: "Gradient Portfolio Website",
         images: ["/asset/img/ProjectsContent/Projects/p/p1.jpg", "/asset/img/ProjectsContent/Projects/p/p4.jpg", "/asset/img/ProjectsContent/Projects/p/p3.jpg", "/asset/img/ProjectsContent/Projects/p/p0.jpg",],
-        brief: ["Design and develop a fully responsive developer portfolio website utilizing React.Js, GSAP, React-scroll, and Sass.", "Using dynamic data management to streamline updates and modifications of UI.", "Create an interactive and appealing user interface with intriguing visual details to establish a clear design hierarchy."],
+        brief: ["Design and develop a fully responsive developer portfolio website utilizing React.Js, GSAP, React-scroll, and Sass.", "Using dynamic data management to streamline UI updates and modifications.", "Create an interactive and appealing user interface with intriguing visual details to establish a clear design and content hierarchy.", "Employ sophisticated tools and conduct thorough testing procedures to debug and optimize code for optimal functionality."],
         stacks: ["react", "sass", "gsap"],
         mouseSecColor: "rgb(116, 155, 194)",
         mouseColor: "rgb(255, 225, 225)",
@@ -26,7 +26,6 @@ const projectInfo = [
         projectTitle: "Halloween Animated Website",
         images: ["/asset/img/ProjectsContent/Projects/h/h-mock2.jpg", "/asset/img/ProjectsContent/Projects/h/h-mock1.jpg", "/asset/img/ProjectsContent/Projects/h/h-fav.jpg", 'public/asset/img/ProjectsContent/Projects/h/h4.jpg'],
         brief: ["Create a fully responsive design using HTML, JavaScript, and SwiperJS library to ensure optimal viewing experience across devices.", "Incorporate smooth animations in each section of the website to enhance user interaction and create an immersive browsing experience.", "Implement scrollable cards and carouse feature to effectively showcase highlights, ensuring easy access and navigation between different sections."],
-        wordTounderline: ["fully responsive", "API data fetching", "persists state", "content management"],
         stacks: ["react", "sass", "js"],
         mouseColor: "rgb(255, 225, 225)",
         mouseSecColor: "rgb(144, 161, 125)",
@@ -35,9 +34,9 @@ const projectInfo = [
 
     },
     {
-        projectTitle: "Gamified Productivity Web App   [in construction] ",
+        projectTitle: "Gamified Productivity Web App [in construction] ",
         images: ["public/asset/img/ProjectsContent/Projects/t/t1.jpg"],
-        brief: ["A fully responsive fashion e-commerce website with a sleek and modern design using React, React Redux, and Sass.", "Leveraged API data fetching techniques to enable advanced filtering options and smooth browsing through product categories.", "Integrated a shopping cart feature that persists state, allowing users to add and manage items effortlessly.", "Powered by Strapi, a headless CMS, it seamlessly integrates content management capabilities, allowing for effortless updates and modifications."],
+        brief: ["Craft a visually endearing user interface with pixel art, implemented with ReactJS and enhanced with Firebase and SASS.", "Devise an engaging in-app reward system to motivate users and enhance their experience.", "Establish a robust backend infrastructure, including data structure design and seamless data integration into the backend.", "Develop a practical to-do list feature with subcategories and a timer functionality to boost users productivity."],
         stacks: ["react", "sass", "js"],
         mouseColor: "rgb(255, 225, 225)",
         mouseSecColor: "rgb(255, 218, 185)",
@@ -46,14 +45,6 @@ const projectInfo = [
     }
 
 ];
-
-const stacksInfo = {
-    react: "public/asset/img/ProjectsContent/stackIcons/react.svg",
-    js: "public/asset/img/ProjectsContent/stackIcons/js.svg",
-    sass: "public/asset/img/ProjectsContent/stackIcons/sass.svg",
-    gsap: "public/asset/img/ProjectsContent/stackIcons/gsap.png"
-};
-
 const ProjectsContent = () => {
     return (
         <section className='projects-content container' id="projects">
@@ -64,8 +55,8 @@ const ProjectsContent = () => {
                     projectTitle={project.projectTitle}
                     images={project.images}
                     brief={project.brief}
-                    stacks={project.stacks}
-                    stacksInfo={stacksInfo}
+
+
                     isLast={index === (projectInfo.length + 1)}
 
                     mouseColor={project.mouseColor}

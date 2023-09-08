@@ -9,7 +9,7 @@ import { LinkExternalIcon } from '@primer/octicons-react'
 gsap.registerPlugin(ScrollTrigger);
 
 
-const ProjectsCard = ({ projectTitle, images, brief, stacks, stacksInfo, isLast, mouseColor, mouseSecColor, repoLink, liveLink }) => {
+const ProjectsCard = ({ projectTitle, images, brief, isLast, mouseColor, mouseSecColor, repoLink, liveLink }) => {
 
     const containerRef = useRef(null);
     const gradientRef = useRef(null);
@@ -124,18 +124,6 @@ const ProjectsCard = ({ projectTitle, images, brief, stacks, stacksInfo, isLast,
                                 ))}
                             </ul>
                         </div>
-                        {/* <div className="stack-icons">
-                                {/* <img src="../../public/asset/img/icon/live.svg" alt="view live projects" className="card-live" /> */}
-                        {/* <img src="../../public/asset/img/icon/github.svg" alt="" className="card-github" /> */}
-                        {/* {stacks.map((stack, index) => (
-                                <img
-                                    key={index}
-                                    src={stacksInfo[stack]}
-                                    alt={stack}
-                                    className="stack-icon"
-                                />
-                            ))} */}
-                        {/* </div> */}
                         <div className="card-icons">
                             <a href={liveLink} target="_blank" rel="noopener noreferrer" >
                                 <button className="button card-button" >

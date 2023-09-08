@@ -7,11 +7,10 @@ const Shuffler = () => {
     const [counter, setCounter] = useState(0);
 
     const arrValues = ["functionality", "performance", "accessibility", "functionality", "optimization", "engagement", "interactivity"];
-    const shuffleMode = "random"; // or "lastword"
-    const maxDisplayLength = 2; // maximum number of letters displayed
-
+    const shuffleMode = "random";
+    const maxDisplayLength = 2;
     useEffect(() => {
-        const delay = 3000; // delay between each word shuffle
+        const delay = 3000;
 
         const shuffleArray = (array) => {
             let currentIndex = array.length;
@@ -57,14 +56,11 @@ const Shuffler = () => {
                     .split("")
                     .map((letter, idx) => {
                         if (idx === 0) {
-                            // return first letter straight away
                             return letter;
                         }
                         if (idx < iterations) {
-                            // return letters to this position
                             return letter;
                         }
-                        // return random letter (or letter at this position from previous word)
                         if (shuffleMode === "lastword") return prevWord.charAt(idx);
                         else return getRandomLetter(prevWord, idx);
                     })
@@ -72,18 +68,14 @@ const Shuffler = () => {
             );
 
             if (iterations >= txtLength) {
-                // stop when we have completed the word
                 clearInterval(interval);
             }
-
-            // number of steps to take on each iteration
             iterations += 1;
         }, 60);
     };
 
     const getRandomLetter = (prevWord, idx) => {
         if (idx >= maxDisplayLength) {
-            // limit the displayed random letters
             return prevWord.charAt(idx);
         } else {
             return LETTERS[Math.floor(Math.random() * LETTERS.length)];

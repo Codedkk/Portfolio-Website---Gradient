@@ -4,13 +4,6 @@ import React, { useState } from "react";
 const Slider = ({ images }) => {
     const [currentSlide, setCurrentSlide] = useState(0);
     const [imageWidth, setImageWidth] = useState(0);
-
-    // const data = [
-    //     "public/asset/img/ProjectsContent/Free_iPhone_12_Mockup_3.jpeg",
-    //     "public/asset/img/ProjectsContent/Free_Iphone_13_Pro_Mockup_1.jpeg",
-    //     "public/asset/img/ProjectsContent/Free_MacBook_Pro_1.jpeg",
-    // ];
-
     const prevSlide = () => {
         setCurrentSlide(currentSlide === 0 ? 3 : (prev) => prev - 1);
     };

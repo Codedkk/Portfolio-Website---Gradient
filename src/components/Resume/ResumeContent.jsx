@@ -14,7 +14,6 @@ const ResumeContent = () => {
             resume_contents.forEach((resume_content) => {
                 gsap.from(resume_content, {
                     delay: 2,
-                    // duration: 90,
                     x: -200,
                     scrollTrigger: {
                         trigger: resume_content,
@@ -22,11 +21,6 @@ const ResumeContent = () => {
                         start: 'top 150%',
                         end: 'top 50%',
                         toggleActions: "none pause none none",
-                        // markers: {
-                        //     startColor: "yellow",
-                        //     endColor: "pink",
-                        // }
-
                     },
                 });
 
@@ -35,19 +29,15 @@ const ResumeContent = () => {
         return () => ctx.revert();
     }, []);
 
-    const handleButtonDownload = () => {
-        window.location.href = 'https://example.com/path/to/pdf';
-    }; //TODO
-
     return (
         <section className='resume-content' id="resume" ref={el => resume_content = el}>
             <div>
                 <div className="resume-title">WORK WITH ME</div>
             </div>
             <div className="resume-button">
-                <a href="/asset/cv.pdf" download><button className="button button-resume" >✧ Get Resume ✧</button>
+                <a href="/asset/KIKI_DENG_Front_end_Developer_CV_KKxDEV@proton_me.pdf" target="_blank"><button className="button button-resume" >✧ Get Resume ✧</button>
                 </a>
-                {/* onClick={handleButtonDownload} */}
+
             </div>
         </section>
     )
