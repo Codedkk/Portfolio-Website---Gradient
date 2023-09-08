@@ -35,7 +35,7 @@ const projectInfo = [
     },
     {
         projectTitle: "Gamified Productivity Web App [in construction] ",
-        images: ["public/asset/img/ProjectsContent/Projects/t/t1.jpg"],
+        images: ["/asset/img/ProjectsContent/Projects/t/t1.jpg"],
         brief: ["Craft a visually endearing user interface with pixel art, implemented with ReactJS and enhanced with Firebase and SASS.", "Devise an engaging in-app reward system to motivate users and enhance their experience.", "Establish a robust backend infrastructure, including data structure design and seamless data integration into the backend.", "Develop a practical to-do list feature with subcategories and a timer functionality to boost users productivity."],
         stacks: ["react", "sass", "js"],
         mouseColor: "rgb(255, 225, 225)",
