@@ -89,15 +89,15 @@ const AboutContent = () => {
                             </div>
                             <div className="about_social" >
                                 <a href="https://github.com/KKDEVE" target="_blank" rel="noopener noreferrer" className="about_social_icon">
-                                    <img src="../../public/asset/img/icon/github.svg" alt="" />
+                                    <img src="/asset/img/icon/github.svg" alt="" />
 
                                 </a>
                                 <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="about_social_icon" onClick={handleButtonMail}>
-                                    <img src="../../public/asset/img/icon/mail.svg" alt="" />
+                                    <img src="/asset/img/icon/mail.svg" alt="" />
 
                                 </a>
                                 <a href="https://www.linkedin.com/in/kiki-deng" target="_blank" rel="noopener noreferrer" className="about_social_icon">
-                                    <img src="../../public/asset/img/icon/linkedin.svg" alt="" />
+                                    <img src="/asset/img/icon/linkedin.svg" alt="" />
                                 </a>
                             </div>
                         </div>
