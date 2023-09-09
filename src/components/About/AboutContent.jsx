@@ -96,7 +96,7 @@ const AboutContent = () => {
                                     <img src="/asset/img/icon/mail.svg" alt="" />
 
                                 </a>
-                                <a href="https://www.linkedin.com/in/kiki-deng" target="_blank" rel="noopener noreferrer" className="about_social_icon">
+                                <a href="https://www.linkedin.com/in/kikideng" target="_blank" rel="noopener noreferrer" className="about_social_icon">
                                     <img src="/asset/img/icon/linkedin.svg" alt="" />
                                 </a>
                             </div>

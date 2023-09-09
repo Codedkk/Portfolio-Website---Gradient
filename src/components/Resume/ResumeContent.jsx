@@ -35,7 +35,7 @@ const ResumeContent = () => {
                 <div className="resume-title">WORK WITH ME</div>
             </div>
             <div className="resume-button">
-                <a href="/asset/KIKI_DENG_Front_end_Developer_CV_KKxDEV@proton_me.pdf" target="_blank"><button className="button button-resume" >✧ Get Resume ✧</button>
+                <a href="/asset/KIKI_DENG_Software_Engineer_CV_KKxDEV@proton_me.pdf" target="_blank"><button className="button button-resume" >✧ Get Resume ✧</button>
                 </a>
 
             </div>

@@ -7,7 +7,7 @@ const Footer = () => {
         window.open('mailto:KK_DEV@outlook.com');
     };
     const handleLinkedin = () => {
-        const url = "https://www.linkedin.com/in/kiki-deng";
+        const url = "https://www.linkedin.com/in/kikideng";
         window.open(url, "_blank");
     };
     const handleGithub = () => {
