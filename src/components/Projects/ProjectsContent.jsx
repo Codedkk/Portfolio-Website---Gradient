@@ -25,7 +25,7 @@ const projectInfo = [
     {
         projectTitle: "DATA EYE DASHBOARD",
         images: ["/asset/img/ProjectsContent/Projects/d/d2.jpg", "/asset/img/ProjectsContent/Projects/d/d1.jpg", "/asset/img/ProjectsContent/Projects/d/d3.jpg", "/asset/img/ProjectsContent/Projects/d/d4.jpg",],
-        brief: ["Developed a convenient data tracker, adaptable to various scenarios, enabling users to track and visualize their data.", "Introduced a bold UX design inspired by brutalism that attracted users and established a clear visual system."],
+        brief: ["Develop a convenient data tracker, adaptable to various scenarios, enabling users to track and visualize their data with Vue.js, Chart.js and CSS.", "Introduce a bold UX design inspired by brutalism that attractes users and establishes a clear visual system."],
         stacks: ["Vue.js", "Chart.js", "CSS"],
         mouseSecColor: "rgba(215, 197, 253, 1)",
         mouseColor: "rgba(253, 255, 231, 1)",
