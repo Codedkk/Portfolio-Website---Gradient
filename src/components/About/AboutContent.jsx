@@ -66,15 +66,17 @@ const AboutContent = () => {
 
                                     <ul>
                                         <li>React</li>
+                                        <li>Vue</li>
                                         <li>Javascript</li>
                                         <li>SASS</li>
                                         <li>CSS</li>
 
-                                        <li>GIT</li>
+
                                     </ul>
                                     <ul>
 
-                                        <li>MUI</li>
+
+                                        <li>GIT</li>
                                         <li>Figma</li>
                                         <li>Abobe Suit</li>
                                         <li>Aseprite</li>
