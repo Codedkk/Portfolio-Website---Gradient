@@ -23,6 +23,16 @@ const projectInfo = [
         repoLink: "https://github.com/KKDEVE/Portfolio-Website-Gradient"
     },
     {
+        projectTitle: "DATA EYE DASHBOARD",
+        images: ["/asset/img/ProjectsContent/Projects/d/d2.jpg", "/asset/img/ProjectsContent/Projects/d/d1.jpg", "/asset/img/ProjectsContent/Projects/d/d3.jpg", "/asset/img/ProjectsContent/Projects/d/d4.jpg",],
+        brief: ["Developed a convenient data tracker, adaptable to various scenarios, enabling users to track and visualize their data.", "Introduced a bold UX design inspired by brutalism that attracted users and established a clear visual system."],
+        stacks: ["Vue.js", "Chart.js", "CSS"],
+        mouseSecColor: "rgba(215, 197, 253, 1)",
+        mouseColor: "rgba(253, 255, 231, 1)",
+        liveLink: "",
+        repoLink: "https://github.com/KKDEVE/Vue-Tracker-Dashboard"
+    },
+    {
         projectTitle: "Halloween Animated Website",
         images: ["/asset/img/ProjectsContent/Projects/h/h-mock2.jpg", "/asset/img/ProjectsContent/Projects/h/h-mock1.jpg", "/asset/img/ProjectsContent/Projects/h/h-fav.jpg", 'public/asset/img/ProjectsContent/Projects/h/h4.jpg'],
         brief: ["Create a fully responsive design using HTML, JavaScript, and SwiperJS library to ensure optimal viewing experience across devices.", "Incorporate smooth animations in each section of the website to enhance user interaction and create an immersive browsing experience.", "Implement scrollable cards and carouse feature to effectively showcase highlights, ensuring easy access and navigation between different sections."],
