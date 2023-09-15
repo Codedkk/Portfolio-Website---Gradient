@@ -10,6 +10,7 @@ I thoroughly enjoyed making it 😮‍💨, hope you like it too!
 **Link to project:** https://kkdev.onrender.com/
 
 ![live portfolio website](/asset/porfolio.gif)
+<img src="/asset/porfolio.gif" width="128"/>
 
 ## How It's Made:
 
