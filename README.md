@@ -37,7 +37,7 @@ Finanlise design before next step, but I would also allow room for new ideas dur
 ## More Projects:
 Check out more projects from me 😉:
 
-**React Fashion E-commerce Website:**https://github.com/KKDEVE/React-Ecommerce-Website_deploy
+**React Fashion E-commerce Website:** https://github.com/KKDEVE/React-Ecommerce-Website
 
 **Vue Data Dashboard:** https://github.com/KKDEVE/Vue-Tracker-Dashboard
 
