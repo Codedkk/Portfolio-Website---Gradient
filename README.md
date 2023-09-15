@@ -1,10 +1,9 @@
 # Gradient Portfolio Website
 I designed, developed and deployed a fully responsive developer portfolio website utilizing React.Js, GSAP, React-scroll, and Sass.
 
-Inserted some spontaneous design ideas💡✨, played with some beautiful serene colors 🌈🍧.
+Inserted some spontaneous design ideas💡✨,  played with some beautiful serene colors 🌈🍧.
 
 I thoroughly enjoyed making it 😮‍💨, hope you like it too! 
-
 
 
 **Link to project:** https://kkdev.onrender.com/
@@ -15,24 +14,33 @@ I thoroughly enjoyed making it 😮‍💨, hope you like it too!
 
 **Tech used:** React.Js, GSAP, React-scroll, Sass
 
-Here's where you can go to town on how you actually built this thing. Write as much as you can here, it's totally fine if it's not too much just make sure you write *something*. If you don't have too much experience on your resume working on the front end that's totally fine. This is where you can really show off your passion and make up for that ten fold.
+First of all, I sought guidance and examples of the content system of a developer's portfolio. It took some time to transform it into UI design. And the effort put into crafting a personal branding is very much worthwhile. This is the content aspect.
+
+As for the process for the UI design, I liked the elegant look of the design system and wanted to infuse some ✨personality✨ by using a more prominent font for the logo and incorporating splashes of colors.
+
+During development, I started with the background. As the background spanned across components, I became aware of the interrelation between components.  So I first focused on laying out all the components and realizing their functionality. Then I dived into the details and styling.
+
+The freedom to create something that represent myself for myself and inserting exciting new ideas I came across made this project very enjoyable amd memorable for me.
 
 ## Optimizations
-*(optional)*
 
-You don't have to include this section but interviewers *love* that you can not only deliver a final product that looks great but also functions efficiently. Did you write something then refactor it later and the result was 5x faster than the original implementation? Did you cache your assets? Things that you write in this section are **GREAT** to bring up in interviews and you can use this section as reference when studying for technical interviews!
+ To fix flicker issue of useEffect.
+ Animation could have more intricate effects -- some vision awaits.
 
 ## Lessons Learned:
 
-No matter what your experience level, being an engineer means continuously learning. Every time you build something you always have those *whoa this is awesome* or *wow I actually did it!* moments. This is where you should share those moments! Recruiters and interviewers love to see that you're self-aware and passionate about growing.
+Coomponent structure and state: the two main sections, hero section and the accordion, both required more complex management of state and component relation, which later proved can be tricky and should definately be planned before actual coding. From this experience, I learned some lessons on what could be planned to make the state and components more managable.
 
-## Examples:
-Take a look at these couple examples that I have in my own portfolio:
+Finanlise design before next step, but I would also allow room for new ideas during the process, as it is easier to manage since this is an independent project. 
 
-**Palettable:** https://github.com/alecortega/palettable
 
-**Twitter Battle:** https://github.com/alecortega/twitter-battle
+## More Projects:
+Check out more projects from me 😉:
 
-**Patch Panel:** https://github.com/alecortega/patch-panel
+**React Fashion E-commerce Website:**https://github.com/KKDEVE/React-Ecommerce-Website_deploy
+
+**Vue Data Dashboard:** https://github.com/KKDEVE/Vue-Tracker-Dashboard
+
+**Animation Studio Portfolio Website:** https://github.com/KKDEVE/Hallow-Inc-website
 
 
